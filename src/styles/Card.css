@@ -1,0 +1,45 @@
+.card {
+    margin: 0 auto;
+    height: 100%;
+}
+
+.card h3 {
+    padding-top: 10px;
+    width: 70%;
+}
+
+.location-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: -10px;
+}
+
+.location-svg {
+    height: auto;
+    width: 1.8rem;
+    margin-left: 10px;
+}
+
+.photo {
+    margin-top: -10px;
+}
+
+.links {
+    position: absolute;
+    bottom: 10vh ;
+}
+
+.link {
+    bottom: 0;
+    margin-right: 15px;
+    margin-left: -5px;
+}
+
+.link, .link:visited {
+    color: white;
+}
+
+.link:hover, .link:active {
+    color: #13d284;
+}

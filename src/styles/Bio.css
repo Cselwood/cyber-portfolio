@@ -1,0 +1,40 @@
+.bio-container {
+    margin-bottom: 10px;
+}
+
+.bio-container p {
+    font-weight: 400;
+}
+
+.floating {
+    transform: translateY(4px);
+    cursor: pointer;
+}
+
+.floating:hover {
+    color: #13d284;
+}
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.floating span {
+  display: inline-block;
+  animation: floatUpDown 0.8s infinite ease-in-out;
+  animation-delay: calc(var(--i) * 0.05s);
+}
+
+.floating {
+  display: inline-block;
+}
+
+.floating strong {
+  display: inline-block;
+  position: relative;
+}

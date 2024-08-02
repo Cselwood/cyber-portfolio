@@ -1,23 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useRef, useState } from 'react';
+import Card from "./components/Card";
+import Bio from "./components/Bio";
+import Jobs from "./components/Jobs";
+import './styles/App.css';
 
 function App() {
+
+  const [contentHover, setContentHover] = useState(false);
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+
+    const handleScrolling = (event) => {
+      if(contentRef !== null) {
+        if(contentHover === false) {
+          contentRef.current.scrollTop += event.deltaY;
+        }
+      }
+    }
+
+    window.addEventListener("wheel", handleScrolling);
+
+    return () => {
+      window.removeEventListener("wheel", handleScrolling);
+    }
+
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="mainflex">
+        <div className="no-scroll">
+          <Card />
+        </div>
+        <div  className="scroll" ref={contentRef}
+              onMouseEnter={ () => { setContentHover(true) }}
+              onMouseLeave={ () => { setContentHover(false) }} >
+          <Bio />
+          <Jobs />
+        </div>
+      </div>
     </div>
   );
 }

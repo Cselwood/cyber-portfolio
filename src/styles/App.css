@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "MyFont";
+    src: local("myfont"), url(../fonts/myfont.woff2) format(woff2);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.mainflex {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.mainflex > div
+{
+    width: 40%;
+    height: 85vh;
+    padding-top: 15vh;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.no-scroll {
+    position: sticky;
+    top: 0;
+}
+
+.scroll {
+    margin-top: 0vh !important;
+    padding-top: 15vh;
+    overflow: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+h1 {
+    font-family: "MyFont", monospace;
+    font-optical-sizing: auto;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: 0;
+    margin: 0 0 10px;
+    -webkit-font-smoothing: antialiased;
+    color: #d5edfc;
+}
+
+h2 {
+    font-family: "MyFont", monospace;
+    font-optical-sizing: auto;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    margin: 0;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    color: #d5edfc;
+}
+
+h3 {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    margin-top: 5px;
+    font-weight: 500;
+    color: #eee;
+}
+
+h4 {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: #eee;
+}
+
+h5 {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.1rem;
+    top: 0;
+    margin: 0;
+    font-weight: 600;
+    color: #eee;
+}
+
+p {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    line-height: 1.6rem;
+    font-style: normal;
+    color: #eee;
+}
+
+b {
+    color: #13d284;
+    text-decoration: none;
+}
+
+a:link{
+    text-decoration: none;
+}
