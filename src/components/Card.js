@@ -1,7 +1,7 @@
 import React from 'react';
 import Icon from '@mdi/react';
 import {ReactComponent as UK} from "../assets/UK.svg"
-import { mdiLinkedin, mdiGithub, mdiCardAccountMail   } from '@mdi/js';
+import { mdiLinkedin, mdiGithub } from '@mdi/js';
 import Photo from "../components/Photo";
 import '../styles/Card.css';
 
@@ -21,9 +21,6 @@ function Card() {
                 </a>
                 <a className='link' href='https://github.com/Cselwood' alt='GitHub' target='select'>
                     <Icon path={mdiGithub} size={1.2} />
-                </a>
-                <a className='link' href='https://github.com/Cselwood' alt='GitHub' target='select'>
-                    <Icon path={mdiCardAccountMail} size={1.2} />
                 </a>
             </div>
         </div>
