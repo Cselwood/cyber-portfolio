@@ -28,7 +28,7 @@ function Bio() {
             </p>
             <p>I recently gained two years of experience in management, exploring my capabilities running large teams under pressure. I managed a team of 15 staff; focusing on consistent delivery, working standards and skills coaching. Previously, I helped large and small companies transform their data analysis.</p>
             <p>
-                <a className='floating'>Check back soon on my new <strong>Blog!</strong>
+                <a className='floating'>Check back soon for my new <strong>Blog!</strong>
                 </a>
             </p>
         </div>

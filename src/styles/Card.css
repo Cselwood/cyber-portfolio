@@ -27,7 +27,7 @@
 
 .links {
     position: absolute;
-    bottom: 10vh ;
+    bottom: 10vh;
 }
 
 .link {
@@ -42,4 +42,53 @@
 
 .link:hover, .link:active {
     color: #13d284;
+}
+
+.navigation {
+    margin-top: 30px;
+}
+
+.navigation a {   
+    margin-bottom: 10px;
+}
+
+.navigation a h5 {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.6rem;
+
+    opacity: 0.7;
+}
+
+.id-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    align-items: center;
+}
+
+.id-section h5.active {
+    opacity: 1.0;
+}
+
+.id-section span {
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition: 0.15s;
+
+    height: 1px;
+    width: 32px;
+    content: "";
+    margin-right: 20px;
+
+    background-color: white;
+    opacity: 0.7;
+}
+
+.id-section span.active {
+    width: 64px;
+    opacity: 1.0;
 }
