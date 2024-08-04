@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Card from "./components/Card";
 import Bio from "./components/Bio";
 import Jobs from "./components/Jobs";
+import Blog from './components/Blog';
 import './styles/App.css';
 
 function App() {
@@ -30,26 +31,24 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const viewportHeight = window.innerHeight;
-      const viewportCenter = viewportHeight / 2;
+      const viewportHeight = contentRef.current.clientHeight;
+      const viewportCenter = contentRef.current.scrollTop + viewportHeight / 2;
       const sections = [firstSection.current, secondSection.current, thirdSection.current];
-      let closestSection = '';
-      let closestDistance = Infinity;
+      let newCurrentSection = '';
 
       sections.forEach((section) => {
         if (section) {
           const rect = section.getBoundingClientRect();
-          const sectionCenter = rect.top + rect.height / 2;
-          const distance = Math.abs(viewportCenter - sectionCenter);
+          const sectionTop = rect.top + contentRef.current.scrollTop;
+          const sectionBottom = sectionTop + rect.height;
 
-          if (distance < closestDistance) {
-            closestDistance = distance;
-            closestSection = section.id;
+          if (viewportCenter >= sectionTop && viewportCenter < sectionBottom) {
+            newCurrentSection = section.id;
           }
         }
       });
 
-      setCurrentSection(closestSection);
+      setCurrentSection(newCurrentSection);
     };
 
     const contentElement = contentRef.current;
@@ -61,7 +60,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div >
       <div className="mainflex">
         <div className="no-scroll">
           <Card currentSection={currentSection} />
@@ -79,7 +78,7 @@ function App() {
             <Jobs />
           </div>
           <div id="blog" ref={thirdSection}> 
-            <p>Blog Test</p>
+            <Blog/>
           </div>
         </div>
       </div>

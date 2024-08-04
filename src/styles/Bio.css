@@ -6,6 +6,11 @@
     font-weight: 400;
 }
 
+.bio-top {
+  margin-top: -15vh;
+  padding-top: 15vh;
+}
+
 .floating {
     transform: translateY(10px);
     cursor: pointer;

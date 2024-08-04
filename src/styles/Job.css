@@ -1,9 +1,45 @@
+.call-to-action-container{
+    padding-top: 80px;
+}
+
+.call-to-action {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.call-to-action:visited, .call-to-action:active {
+    color: white;
+}
+
+.call-to-action:hover {
+    color: #13d284;
+}
+
+.call-to-action:hover .call-to-action-text {
+    color: #13d284;
+}
+
+.call-to-action:hover .action-icon {
+    transform: translate3D(5px, -5px, 0);
+}
+
+.action-icon {
+    transition: transform 0.1s ease-in-out;
+}
+
+.call-to-action-text {
+    color: white;
+    padding-right: 8px;
+}
+
+
 .job-flex {
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
     flex-direction: column;
-    margin-bottom: 5rem;
+    padding-bottom: 5rem;
     background-color: transparent;
 }
 

@@ -4,9 +4,6 @@ import { mdiArrowDown, mdiArrowUp } from '@mdi/js';
 import "../styles/Job.css"
 
 const Job = ({year, title, company, description, METRICARRAY, HARDSKILLS, SOFTSKILLS}) => {
-
-    console.log(HARDSKILLS);
-
     const [isExpanded, setIsExpanded] = useState(false);
     const contentRef = useRef(null);
 

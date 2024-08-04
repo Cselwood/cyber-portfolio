@@ -5,7 +5,14 @@ import { mdiLinkedin, mdiGithub } from '@mdi/js';
 import Photo from "../components/Photo";
 import '../styles/Card.css';
 
-function Card({ currentSection }) {
+function Card({ currentSection }) {    
+    const scrollToSection = (sectionId) => {
+        const section  = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({behavior: "smooth"});
+            }
+    };
+
     return (
         <div className={`card prevent-select ${currentSection}`}>
             <h1 className='prevent-select'>Chris Selwood</h1>
@@ -22,19 +29,19 @@ function Card({ currentSection }) {
                     <Icon path={mdiGithub} size={1.2} />
                 </a>
             </div>
-            <div className="navigation">
-                <a className='about-section id-section' href='' alt="about">
+            <div className="nav-wrapper ">
+                <div className="nav-section" onClick={() => scrollToSection("about")} alt="about">
                     <span className={`${currentSection === 'about' ? 'active' : ''}`}></span>
                     <h5 className={currentSection === 'about' ? 'active' : ''}>About</h5>
-                </a>
-                <a className='experience-section id-section' href='' alt="experience">
+                </div>
+                <div className='nav-section' onClick={() => scrollToSection("experience")} alt="experience">
                     <span className={`${currentSection === 'experience' ? 'active' : ''}`}></span>
                     <h5 className={currentSection === 'experience' ? 'active' : ''}>Experience</h5>
-                </a>
-                <a className='blog-section id-section' href='' alt="blog">
+                </div>
+                <div className='nav-section' onClick={() => scrollToSection("blog")} alt="blog">
                     <span className={`${currentSection === 'blog' ? 'active' : ''}`}></span>
                     <h5 className={currentSection === 'blog' ? 'active' : ''}>Blog</h5>
-                </a>
+                </div>
             </div>
         </div>
     );

@@ -1,4 +1,6 @@
 import React from 'react';
+import Icon from '@mdi/react';
+import { mdiArrowTopRight } from '@mdi/js';
 import Job from "../components/Job"
 
 const Jobs = () => {
@@ -104,6 +106,12 @@ const Jobs = () => {
             {JOB_DATA.map((job, index) => (
                 <Job key={index} year={job.year} title={job.title} company={job.company} description={job.description} METRICARRAY={job.metrics} HARDSKILLS={job.hard_skills} SOFTSKILLS={job.soft_skills}/>
             ))}
+            <div className='call-to-action-container'>
+                <a className='call-to-action' href="https://www.linkedin.com/in/chris-selwood/" alt="linkedin" rel="noreferrer" target='_blank'>
+                    <h5 className='call-to-action-text'>View on LinkedIn</h5>
+                    <Icon className="action-icon" path={mdiArrowTopRight} size={0.9} />
+                </a>
+            </div>
         </div>
     );
 };

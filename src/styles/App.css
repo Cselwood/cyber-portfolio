@@ -22,6 +22,7 @@
     padding-top: 15vh;
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 0px;
 }
 
 .no-scroll {
@@ -31,7 +32,6 @@
 
 .scroll {
     margin-top: 0vh !important;
-    padding-top: 15vh;
     overflow: scroll;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE and Edge */
