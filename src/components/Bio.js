@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import "../styles/Bio.css"
 
-function Bio() {
+const Bio = ({deviceClass}) => {
 
     useEffect(() => {
         const floatingLinks = document.querySelectorAll('.floating strong');
@@ -18,7 +18,7 @@ function Bio() {
     }, []);
 
     return (
-        <div className="bio-container prevent-select bio-top">
+        <div className="bio-container prevent-select bio-top ${deviceClass}">
             <p>I'm a first-class graduate of Software Engineering
                 who has worked in various data, software development and managements jobs for over a decade in the <b>retail</b>, <b>construction</b> and <b>electric vehicle</b> industries.
             </p>

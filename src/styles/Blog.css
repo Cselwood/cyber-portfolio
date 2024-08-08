@@ -1,5 +1,35 @@
 .blog-flex {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: row; 
+    justify-content: flex-start;  
+    padding-bottom: 20px;
+    padding-top: 20px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.blog-right-half {
+    margin-left: 30px;
+}
+
+.blog-link {
+    cursor: pointer;
+}
+
+.blog-link div h5, .blog-link:visited div h5, .blog-link:active div h5 {
+    color: white;
+}
+
+.blog-link:hover div h5 {
+    color: #13d284 !important;
+}
+
+.blog-date {
+    opacity: 0.8;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    margin-top: 0;
 }

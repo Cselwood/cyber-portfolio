@@ -3,6 +3,7 @@ import Card from "./components/Card";
 import Bio from "./components/Bio";
 import Jobs from "./components/Jobs";
 import Blog from './components/Blog';
+import useViewport from './hooks/useViewport';
 import './styles/App.css';
 
 function App() {
@@ -12,6 +13,11 @@ function App() {
   const firstSection = useRef(null);
   const secondSection = useRef(null);
   const thirdSection = useRef(null);
+  const {width} = useViewport();
+
+  const isMobile = width < 768;
+  const isTablet = width >= 768 && width < 1024;
+  const deviceClass = isMobile ? 'mobile' : isTablet ? 'tablet' : 'desktop';
 
   useEffect(() => {
     const handleScrolling = (event) => {
@@ -60,7 +66,7 @@ function App() {
   }, []);
 
   return (
-    <div >
+    <div className={deviceClass}>
       <div className="mainflex">
         <div className="no-scroll">
           <Card currentSection={currentSection} />
@@ -72,13 +78,13 @@ function App() {
           onMouseLeave={() => { setContentHover(false) }}
         >
           <div id="about" ref={firstSection}>
-            <Bio />
+            <Bio deviceClass={deviceClass} />
           </div>
           <div id="experience" ref={secondSection}>
-            <Jobs />
+            <Jobs deviceClass={deviceClass} />
           </div>
           <div id="blog" ref={thirdSection}> 
-            <Blog/>
+            <Blog deviceClass={deviceClass}/>
           </div>
         </div>
       </div>
