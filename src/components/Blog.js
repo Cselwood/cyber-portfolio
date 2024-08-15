@@ -59,7 +59,7 @@ function Blog() {
                         </a>
                     ))   
                 ) : (
-                    <p>No blog posts available.</p>
+                    <p>Links currently unavailable, please check out chrisselwoodblog.blogspot.com/!</p>
                 )}
             </div>
             <h4 className="blog-container-bottom">More to come!</h4>
