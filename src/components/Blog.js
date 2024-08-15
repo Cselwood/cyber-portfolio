@@ -8,6 +8,7 @@ function Blog() {
 
     // Replace with your actual API key and Blog ID
     const API_KEY = process.env.REACT_APP_API_KEY;
+    console.log("API_KEY: ", API_KEY);
     const BLOG_ID = 6186124035080459555;
     const API_URL = `https://www.googleapis.com/blogger/v3/blogs/${BLOG_ID}/posts?key=${API_KEY}`;
 
