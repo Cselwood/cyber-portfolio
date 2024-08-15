@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Blog.css";
+import Icon from '@mdi/react';
+import { mdiArrowTopRight } from '@mdi/js';
 
 function Blog() {
     const [posts, setPosts] = useState([]);
@@ -42,21 +44,25 @@ function Blog() {
 
     return (
         <div>
-            {posts.length > 0 ? (
-                posts.map(post => (
-                    <a className="blog-flex blog-link" key={post.id} href={post.url} target="_blank" rel="noopener noreferrer">
-                        {post.imageUrl && (
-                                <img src={post.imageUrl} alt={post.title} style={{ width: '100px', height: '50px' }} />
-                        )}
-                        <div className="blog-right-half" >
-                            <h4 className="blog-date">{formatDate(post.published)}</h4>
-                            <h5>{post.title}</h5>
-                        </div>
-                    </a>
-                ))   
-            ) : (
-                <p>No blog posts available.</p>
-            )}
+            <div className="blog-container">
+                {posts.length > 0 ? (
+                    posts.map(post => (
+                        <a className="blog-flex blog-link" key={post.id} href={post.url} target="_blank" rel="noopener noreferrer">
+                            {post.imageUrl && (
+                                    <img src={post.imageUrl} alt={post.title} style={{ width: '100px', height: '50px' }} />
+                            )}
+                            <div className="blog-right-half" >
+                                <h4 className="blog-date">{formatDate(post.published)}</h4>
+                                <h5>{post.title} </h5>
+                            </div>
+                            <Icon className="title-icon" path={mdiArrowTopRight} size={0.9} />
+                        </a>
+                    ))   
+                ) : (
+                    <p>No blog posts available.</p>
+                )}
+            </div>
+            <h4 className="blog-container-bottom">More to come!</h4>
         </div>
     );
 }

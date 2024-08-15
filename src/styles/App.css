@@ -7,7 +7,7 @@
 
 .mainflex {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
@@ -17,12 +17,16 @@
 
 .mainflex > div
 {
-    width: 40%;
+    width: 30%;
     height: 85vh;
     padding-top: 15vh;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 0px;
+}
+
+.mainflex > .scroll {
+    width: 60%;
 }
 
 .no-scroll {
@@ -32,9 +36,10 @@
 
 .scroll {
     margin-top: 0vh !important;
-    overflow: scroll;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
+    overflow-y: auto; /* Allow vertical scrolling */
+    scrollbar-width: none; /* Customize scrollbar width (for Firefox) */
+    -ms-overflow-style: auto; /* Show scrollbars (for IE and Edge) */
+    pointer-events:all;
 }
 
 h1 {

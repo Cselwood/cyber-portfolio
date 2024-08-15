@@ -3,6 +3,8 @@ import Card from "./components/Card";
 import Bio from "./components/Bio";
 import Jobs from "./components/Jobs";
 import Blog from './components/Blog';
+import Footer from "./components/Footer";
+
 import useViewport from './hooks/useViewport';
 import './styles/App.css';
 
@@ -21,12 +23,10 @@ function App() {
 
   useEffect(() => {
     const handleScrolling = (event) => {
-      if (contentRef !== null) {
-        if (contentHover === false) {
-          contentRef.current.scrollTop += event.deltaY;
-        }
-      }
-    };
+  if (contentRef.current && !contentHover) {
+    contentRef.current.scrollTop += event.deltaY;
+  }
+};
 
     window.addEventListener("wheel", handleScrolling);
 
@@ -72,7 +72,7 @@ function App() {
           <Card currentSection={currentSection} />
         </div>
         <div
-          className="scroll"
+          className="scroll prevent-select"
           ref={contentRef}
           onMouseEnter={() => { setContentHover(true) }}
           onMouseLeave={() => { setContentHover(false) }}
@@ -86,6 +86,7 @@ function App() {
           <div id="blog" ref={thirdSection}> 
             <Blog deviceClass={deviceClass}/>
           </div>
+          <Footer/>
         </div>
       </div>
     </div>

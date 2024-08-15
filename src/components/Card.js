@@ -29,7 +29,7 @@ function Card({ currentSection }) {
                     <Icon path={mdiGithub} size={1.2} />
                 </a>
             </div>
-            <div className="nav-wrapper ">
+            <div className="nav-wrapper">
                 <div className="nav-section" onClick={() => scrollToSection("about")} alt="about">
                     <span className={`${currentSection === 'about' ? 'active' : ''}`}></span>
                     <h5 className={currentSection === 'about' ? 'active' : ''}>About</h5>
