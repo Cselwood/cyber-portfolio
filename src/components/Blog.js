@@ -58,8 +58,9 @@ function Blog() {
                             <Icon className="title-icon" path={mdiArrowTopRight} size={0.9} />
                         </a>
                     ))   
-                ) : (
-                    <p>Links currently unavailable, please check out chrisselwoodblog.blogspot.com/!</p>
+                ) : (<a className="blog-flex blog-link" href="https://chrisselwoodblog.blogspot.com" alt="chrisselwoodblog.blogspot.com" target="_blank" rel="noopener noreferrer">
+                        <h4>Links currently unavailable. Check out: <b>chrisselwoodblog.blogspot.com</b></h4>
+                    </a>
                 )}
             </div>
             <h4 className="blog-container-bottom">More to come!</h4>

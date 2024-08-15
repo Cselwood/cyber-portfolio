@@ -46,6 +46,10 @@
     cursor: pointer;
 }
 
+.blog-link h4 {
+    text-transform: none;
+}
+
 .blog-link::before {
     position: absolute;
     z-index: -1;
