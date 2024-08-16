@@ -11,12 +11,13 @@ body {
     margin: 0 auto;
     padding: 0;
     height: 100%;
+    max-width: 80vw;
     overflow: hidden;
 }
 
 .mainflex {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
@@ -40,7 +41,7 @@ body {
 
 .scroll {
     margin-top: -15vh !important;
-    padding-bottom: 30vh !important;
+    padding-bottom: 15vh !important;
     overflow-y: auto; /* Allow vertical scrolling */
     scrollbar-width: none; /* Customize scrollbar width (for Firefox) */
     -ms-overflow-style: auto; /* Show scrollbars (for IE and Edge) */
@@ -64,6 +65,13 @@ h1 {
     font-family: "Playfair Display";
     font-size: 60px;
     line-height: 68px;
+    font-weight: 700;
+}
+
+.h1-small {
+    font-family: "Playfair Display";
+    font-size: 35px !important;
+    line-height: 45px;
     font-weight: 700;
 }
 
