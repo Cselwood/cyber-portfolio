@@ -67,7 +67,7 @@ function App() {
 
   return (
     <div className={deviceClass}>
-      <div className="mainflex">
+      <div className="mainflex prevent-select">
         <div className="no-scroll">
           <Card currentSection={currentSection} />
         </div>

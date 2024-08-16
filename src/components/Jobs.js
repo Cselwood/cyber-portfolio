@@ -102,13 +102,14 @@ const Jobs = () => {
 
 
     return (
-        <div className="job-flex">
+        <div className="job-flex large-padding-bottom">
+            <h1 className='medium-padding-bottom'>Experience</h1>
             {JOB_DATA.map((job, index) => (
                 <Job key={index} year={job.year} title={job.title} company={job.company} description={job.description} METRICARRAY={job.metrics} HARDSKILLS={job.hard_skills} SOFTSKILLS={job.soft_skills}/>
             ))}
             <div className='call-to-action-container'>
                 <a className='call-to-action' href="https://www.linkedin.com/in/chris-selwood/" alt="linkedin" rel="noreferrer" target='_blank'>
-                    <h5 className='call-to-action-text'>View on LinkedIn</h5>
+                    <h3 className='call-to-action-text'>View on LinkedIn</h3>
                     <Icon className="action-icon" path={mdiArrowTopRight} size={0.9} />
                 </a>
             </div>

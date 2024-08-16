@@ -17,10 +17,10 @@ const Job = ({year, title, company, description, METRICARRAY, HARDSKILLS, SOFTSK
     };
 
     return (
-        <button className="job-container prevent-select" onClick={toggleExpand}>
-            <div className='job-year'><p>{year}</p></div>
+        <button className="job-container prevent-select medium-margin-bottom" onClick={toggleExpand}>
+            <div className='job-year medium-margin-top'><b>{year}</b></div>
             <ul className="job-list">
-                <li><h5>{title} · {company}</h5></li>
+                <li><h2>{title} · {company}</h2></li>
                 <li>
                     <ul className='job-metrics'>
                         {METRICARRAY?.map((metric, index) => (

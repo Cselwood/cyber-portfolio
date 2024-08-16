@@ -1,12 +1,3 @@
-.card {
-    margin: 0 auto;
-    height: 100%;
-}
-
-.card h3 {
-    padding-top: 10px;
-    width: 70%;
-}
 
 .location-card {
     display: flex;
@@ -15,14 +6,11 @@
     margin-top: -10px;
 }
 
-.location-svg {
-    height: auto;
-    width: 1.8rem;
-    margin-left: 10px;
-}
-
-.photo {
-    margin-top: -10px;
+.nav-link {
+    margin: 0;
+    opacity: 0.7;
+    transition: color 0.3s ease, opacity 0.3s ease;
+    letter-spacing: 1px;
 }
 
 .links {
@@ -37,60 +25,30 @@
 }
 
 .link, .link:visited {
-    color: white;
+    color: #3b3f40;
 }
 
 .link:hover, .link:active {
     color: #13d284;
 }
 
-.nav-wrapper {
-    margin-top: 30px;
-}
 
-.nav-section h5 {
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1px;
-    line-height: 1.6rem;
-
-    opacity: 0.7;
-}
 
 /* Navigation section */
 .nav-section {
-    width: 100%;
-    margin-bottom: 10px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     overflow: hidden;
     align-items: center;
     cursor: pointer;
-    position: relative;
-    padding: 5px 0; /* Optional: Add some padding */
 }
 
-/* Highlight text and expand line on hover */
-.nav-section:hover h5 {
-    color: white; /* Highlight text in white on hover */
+.nav-section:hover nav-link strong {
+    opacity: 1.0;
 }
 
 .nav-section:hover span {
     width: 64px; /* Expand the line on hover */
     opacity: 1.0; /* Make the line fully visible */
-}
-
-/* Navigation heading */
-.nav-section h5 {
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1px;
-    line-height: 1.6rem;
-    opacity: 0.7;
-    transition: color 0.3s ease, opacity 0.3s ease; /* Smooth transition for color and opacity */
 }
 
 /* Indicator span */
@@ -99,7 +57,7 @@
     transition: width 0.3s ease, opacity 0.3s ease; /* Smooth transition for width and opacity */
     height: 2px; /* Adjust height if needed */
     width: 32px; /* Default width of the line */
-    background-color: white; /* Color of the line */
+    background-color: #3b3f40; /* Color of the line */
     opacity: 0.7; /* Initial opacity of the line */
     margin-right: 20px; /* Spacing between the line and the text */
 }
@@ -111,6 +69,6 @@
 }
 
 .nav-section h5.active {
-    color: white; /* Highlight active text in white */
+    color: #3b3f40; /* Highlight active text in white */
     opacity: 1.0; /* Ensure text is fully visible */
 }

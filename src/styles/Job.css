@@ -1,37 +1,4 @@
-.call-to-action-container{
-    padding-top: 80px;
-}
 
-.call-to-action {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.call-to-action:visited, .call-to-action:active {
-    color: white;
-}
-
-.call-to-action:hover {
-    color: #13d284;
-}
-
-.call-to-action:hover .call-to-action-text {
-    color: #13d284;
-}
-
-.call-to-action:hover .action-icon {
-    transform: translate3D(5px, -5px, 0);
-}
-
-.action-icon {
-    transition: transform 0.1s ease-in-out;
-}
-
-.call-to-action-text {
-    color: white;
-    padding-right: 8px;
-}
 
 
 .job-flex {
@@ -70,15 +37,9 @@
     min-height: calc(100% + 40px);
     top: -25px;
     left: -15px;
-    background-color: transparent;
     
 
     border-radius: 12px;
-    box-shadow: none;
-    border-top: none;
-
-    
-    transition: background-color 0.01s ease, box-shadow 0.2s , border-top;
 }
 
 .job-description-container {
@@ -88,9 +49,8 @@
 }
 
 .job-container:hover::before {
-    background-color: rgba(177, 177, 177, 0.089);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.144);
-    border-top: 1px solid rgba(109, 109, 109, 0.685);
+    background-color: #f5f2ed;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.15);
 
 }
 
@@ -112,7 +72,7 @@
 
 .job-list h5 {
     margin: 0;
-    color: white;
+    color: #3b3f40;
 }
 
 .job-container:hover .job-list h5 {
@@ -131,7 +91,6 @@
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
-    opacity: 0.7;
     
     overflow: visible;
 }
@@ -155,30 +114,23 @@
 
 .job-metric-title {
     font-size: 14px;
-    color: white;
     padding-right: 10px;
     font-weight: 500;
     margin-bottom: 0px;
     margin-top: 15px;
-    opacity: 0.9;
 }
 
 .job-metric-description {
     font-size: 14px;
-    color: white;
     font-weight: 300;
-    opacity: 0.8;
     text-transform: none !important;
 }
 
 .job-description {
-    opacity: 0.8;
     font-size: 15px;
 }
 
 .icon-white {
-    color: white;
-    opacity: 0.7;
     padding-bottom: 10px;
     margin-top: 10px;
     height: 20px;
@@ -186,7 +138,6 @@
 }
 
 .job-container:hover .icon-white {
-    transform: translateY(10px);
     color: #13d284;
 }
 
@@ -222,4 +173,43 @@
 .soft-skill {
     background-color: #043624;
     color: #13d284;
+}
+
+
+
+/* LINKEDIN */
+
+.call-to-action-container{
+    padding-top: 80px;
+}
+
+.call-to-action {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.call-to-action:visited, .call-to-action:active {
+    color: #3b3f40;
+}
+
+.call-to-action:hover {
+    color: #13d284;
+}
+
+.call-to-action:hover .call-to-action-text {
+    color: #13d284;
+}
+
+.call-to-action:hover .action-icon {
+    transform: translate3D(5px, -5px, 0);
+}
+
+.action-icon {
+    transition: transform 0.1s ease-in-out;
+}
+
+.call-to-action-text {
+    color: #3b3f40;
+    padding-right: 8px;
 }

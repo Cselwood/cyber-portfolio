@@ -1,49 +1,9 @@
-.bio-container {
-    margin-bottom: 10px;
+.reset-padding {
+    margin-top: -15vh;
+    padding-top: 30vh !important;
 }
 
-.bio-container.mobile {
-    margin-bottom: 10000px;
-}
-
-.bio-container p {
-    font-weight: 400;
-}
-
-.bio-top {
-  margin-top: -15vh;
-  padding-top: 15vh;
-}
-
-.floating {
-    transform: translateY(10px);
-    cursor: pointer;
-}
-
-.floating:hover {
-    color: #13d284;
-}
-
-@keyframes floatUpDown {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(8px);
-  }
-}
-
-.floating span {
-  display: inline-block;
-  animation: floatUpDown 0.8s infinite ease-in-out;
-  animation-delay: calc(var(--i) * 0.05s);
-}
-
-.floating {
-  display: inline-block;
-}
-
-.floating strong {
-  display: inline-block;
-  position: relative;
+.bio-blog-link {
+  cursor: pointer;
+  width: auto;
 }

@@ -8,8 +8,7 @@ function Blog() {
 
     // Replace with your actual API key and Blog ID
     const API_KEY = process.env.REACT_APP_API_KEY;
-    const BLOG_ID = 6186124035080459555;
-    const API_URL = `https://www.googleapis.com/blogger/v3/blogs/${BLOG_ID}/posts?key=${API_KEY}`;
+    const API_URL = `https://www.googleapis.com/blogger/v3/blogs/6186124035080459555/posts?key=${API_KEY}`;
 
     useEffect(() => {
         // Fetch posts from Blogger API
@@ -44,6 +43,7 @@ function Blog() {
 
     return (
         <div>
+            <h1 className="medium-padding-bottom">Blog</h1>
             <div className="blog-container">
                 {posts.length > 0 ? (
                     posts.map(post => (
