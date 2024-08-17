@@ -17,25 +17,26 @@ const Job = ({year, title, company, description, METRICARRAY, HARDSKILLS, SOFTSK
     };
 
     return (
-        <button className="job-container prevent-select medium-margin-bottom" onClick={toggleExpand}>
-            <div className='job-year medium-margin-top'><b>{year}</b></div>
-            <ul className="job-list">
-                <li><h2 className='h1-small'>{title} · {company}</h2></li>
+        <button className="job-container small-padding-top small-padding-bottom medium-margin-bottom backgrounded shadow rounded" onClick={toggleExpand}>
+            <div className='job-year small-padding-top small-margin-top'><b>{year}</b></div>
+            <ul className="job-list flex-column-standard">
+                <li><h2 className='h1-small job-name small-margin-bottom small-margin-top'>{title} · {company}</h2></li>
                 <li>
-                    <ul className='job-metrics'>
+                    <ul className='no-padding small-margin-bottom'>
                         {METRICARRAY?.map((metric, index) => (
-                            <li key={index} className='metric-flex '>
-                                <p className='job-metric-title'>{metric.metric_title} <strong className='job-metric-description'>{metric.metric_description}</strong>
-                                </p>
+                            <li key={index} className='small-margin-top'>
+                                <b className='small-margin-bottom small-margin-top'>{metric.metric_title} 
+                                    <p className='job-metric-description small-margin-bottom small-margin-top'>{metric.metric_description}</p>
+                                </b>
                             </li>
                         ))}
                     </ul>
                 </li>
                 <li>
-                    <div className='job-skills'>
+                    <div className='job-skills small-margin-bottom small-margin-top'>
                         {HARDSKILLS?.map((skill, index) => (
                             <div key={index}>
-                                <p  className='hard-skill'>
+                                <p className='hard-skill skill right-hand-margin micro-padding-top micro-padding-bottom micro-margin-bottom rounded'> 
                                     {skill.skill_title}
                                 </p>
                             </div>
@@ -43,7 +44,7 @@ const Job = ({year, title, company, description, METRICARRAY, HARDSKILLS, SOFTSK
                         
                         {SOFTSKILLS?.map((skill, index) => (
                             <div key={index}>
-                                <p  className='soft-skill'>
+                                <p  className='soft-skill skill right-hand-margin micro-padding-top micro-padding-bottom micro-margin-bottom rounded'>
                                     {skill.skill_title}
                                 </p>
                             </div>
@@ -55,8 +56,9 @@ const Job = ({year, title, company, description, METRICARRAY, HARDSKILLS, SOFTSK
                     {isExpanded ? <Icon className='icon-white' path={mdiArrowUp} size={1}/> : <Icon className='icon-white' path={mdiArrowDown} size={1}/>}
                 </div>
                 
-                <div className='job-description-container' ref={contentRef}>
-                    <p className='job-description'>{description}</p>
+                <div className='job-description-container small-margin-top small-margin-bottom' ref={contentRef}>
+                    <h3 className='small-margin-bottom'>Full Description</h3>
+                    <p className='job-description small-margin-bottom'>{description}</p>
                 </div>
                 
                 

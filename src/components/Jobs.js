@@ -92,6 +92,10 @@ const Jobs = () => {
         {skill_title:"Multitasking"}
     ];
 
+    const JOB_WEBSITES = [
+        {sainsbo_site: ""},
+    ];
+
     const JOB_DATA = [
         {year:"2022 — 2024", title:"Trading and Operations Manager", company: "Sainsbury's", description: "Analysed store performance to identify improvements for profitability. Created operational changes and strategies to increase efficiency and reduce costs. Lead and managed teams to achieve sales. Analysed seasonal changes, visual presentation, and inventory management. Measured KPIs, and ensured compliance with company policies and standards.", metrics: MANAGER_METRICS, hard_skills: MANAGER_HARD_SKILLS, soft_skills: MANAGER_SOFT_SKILLS},
         {year:"2021 — 2022", title:"Operations Controller", company: "Zapi UK", description: "Used advanced data tools and programming skills, including SQL, SAP database programming, Excel, and VBA, to conduct logistics data analytics. Monitor KPIs, develop strategic insights, and create data visualisations using QlikView/QlikSense. Manage logistics, pricing, and stakeholder relationships, while performing forecasts and material quantity planning.", metrics: OPERATIONS_CONTROLLER_METRICS, hard_skills: OPERATIONS_HARD_SKILLS, soft_skills: OPERATIONS_SOFT_SKILLS},
@@ -107,10 +111,13 @@ const Jobs = () => {
             {JOB_DATA.map((job, index) => (
                 <Job key={index} year={job.year} title={job.title} company={job.company} description={job.description} METRICARRAY={job.metrics} HARDSKILLS={job.hard_skills} SOFTSKILLS={job.soft_skills}/>
             ))}
-            <div className='call-to-action-container'>
-                <a className='call-to-action' href="https://www.linkedin.com/in/chris-selwood/" alt="linkedin" rel="noreferrer" target='_blank'>
-                    <h3 className='call-to-action-text'>View on LinkedIn</h3>
+            <div>
+                <a className='flex-row-standard small-margin-bottom' href="https://www.linkedin.com/in/chris-selwood/" alt="linkedin" rel="noreferrer" target='_blank'>
+                    <h3 className='action-name'>View on LinkedIn</h3>
                     <Icon className="action-icon" path={mdiArrowTopRight} size={0.9} />
+                </a>
+                <a className='flex-row-standard small-margin-top' href="https://www.linkedin.com/in/chris-selwood/" alt="resume" rel="noreferrer" target='_blank'>
+                    <h3 className='action-name right-hand-padding'>Check back soon for my updated CV!</h3>
                 </a>
             </div>
         </div>
