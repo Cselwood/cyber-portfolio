@@ -14,10 +14,10 @@ function Card({ currentSection }) {
     return (
         <div className={`${currentSection}`}>
             <b className='blocky'>Hello</b>
-            <h1 className='small-margin-bottom'>I'm Chris Selwood</h1>
-            <h3 className='small-margin-bottom blocky'>Student - Cyber Security MSc</h3>
+            <h1 className='medium-margin-bottom'>I'm Chris Selwood</h1>
+            <h3 className='small-margin-bottom blocky'>Student - Cyber Security & Forensics MSc</h3>
             <h3 className='small-margin-bottom'>
-                <a href="https://twitter.com/UniWestminster" alt="UniWestminster" rel="chrisselwood.com" target='_blank'>@UniWestminster (Sep 2024 - Sep 2025)        
+                <a href="https://twitter.com/UniWestminster" alt="UniWestminster" rel="chrisselwood.com" target='_blank'><b>@UniWestminster (Sep 2024 - Sep 2025)</b>       
                 </a>
             </h3>
             <div className="nav-wrapper medium-margin-top">

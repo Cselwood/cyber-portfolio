@@ -149,6 +149,18 @@ a:hover, a:active{
     background-color: #f5f2ed;
 }
 
+.backgrounded-2 {
+    background-color: #edf5f5;
+}
+
+.backgrounded-3 {
+    background-color: #f5eded;
+}
+
+.backgrounded-4 {
+    background-color: #f1edf5;
+}
+
 .rounded {
     border-radius: 50px;
 }
@@ -185,8 +197,10 @@ a:hover, a:active{
 .micro-padding-top {padding-top: 5px;}
 .micro-padding-bottom {padding-bottom: 5px;}
 
-.right-hand-padding {padding-right: 10px;}
-.right-hand-margin {margin-right: 10px;}
+.right-hand-padding {padding-right: 30px;}
+.right-hand-margin {margin-right: 30px;}
+.left-hand-padding {padding-left: 30px;}
+.left-hand-margin {margin-left: 30px;}
 
 /* FUNCTIONALITY CSS */
 
