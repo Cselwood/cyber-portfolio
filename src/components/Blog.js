@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Blog.css";
-import Icon from '@mdi/react';
-import { mdiArrowTopRight } from '@mdi/js';
 
 function Blog() {
     const [posts, setPosts] = useState([]);
@@ -44,26 +42,24 @@ function Blog() {
     return (
         <div>
             <h1 className="medium-padding-bottom">Blog</h1>
-            <div className="blog-container">
+            <div className="blog-container medium-margin-bottom">
                 {posts.length > 0 ? (
                     posts.map(post => (
-                        <a className="blog-flex blog-link" key={post.id} href={post.url} target="_blank" rel="noopener noreferrer">
+                        <a className="blog-flex shadow backgrounded-2 rounded small-padding-bottom medium-margin-bottom" key={post.id} href={post.url} target="_blank" rel="noopener noreferrer">
                             {post.imageUrl && (
-                                    <img src={post.imageUrl} alt={post.title} style={{ width: '100px', height: '50px' }} />
+                                    <img className="blog-image shadow small-margin-bottom" src={post.imageUrl} alt={post.title} />
                             )}
-                            <div className="blog-right-half" >
-                                <h4 className="blog-date">{formatDate(post.published)}</h4>
-                                <h5>{post.title} </h5>
+                            <div className="small-padding-top" >
+                                <h3 className="small-padding-bottom blog-title left-hand-padding right-hand-padding">{post.title} </h3>
+                                <p className="loose">{formatDate(post.published)}</p>
                             </div>
-                            <Icon className="title-icon" path={mdiArrowTopRight} size={0.9} />
                         </a>
                     ))   
-                ) : (<a className="blog-flex blog-link" href="https://chrisselwoodblog.blogspot.com" alt="chrisselwoodblog.blogspot.com" target="_blank" rel="noopener noreferrer">
+                ) : (<a className="blog-flex" href="https://chrisselwoodblog.blogspot.com" alt="chrisselwoodblog.blogspot.com" target="_blank" rel="noopener noreferrer">
                         <h4>Links currently unavailable. Check out: <b>chrisselwoodblog.blogspot.com</b></h4>
                     </a>
                 )}
             </div>
-            <h4 className="blog-container-bottom">More to come!</h4>
         </div>
     );
 }

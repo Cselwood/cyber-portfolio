@@ -1,100 +1,34 @@
+/* CONTAINER */
 .blog-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    margin-top: 40px;
+    margin: 0 auto;
 
-    background-color: transparent;
-    color: inherit;
-    border: none;
-    font: inherit;
-    outline: inherit;
-    text-align: left;
+    width: 300px;
     
     cursor: pointer;
 }
 
-.blog-container-bottom {
-    margin-top: 0;
-    padding-bottom: 30vh;
-}
+/* BLOG POST */
 
 .blog-flex {
     display: flex;
-    flex-direction: row; 
+    flex-direction: column; 
     justify-content: flex-start;  
-    padding-bottom: 20px;
-    padding-top: 20px;
-    height: 100px;
-    
-    margin-bottom: 30px;
+    text-align: center;
+    overflow: hidden;
 }
 
-.blog-right-half {
-    margin-left: 30px;
-    line-height: 1.5rem;
+.blog-title {
+    font-family: "Playfair Display";
 }
 
-.blog-link:hover .title-icon {
-    transform: translate3D(1vh, -0.5vw, 0);
-    color: #13d284 !important;
+.blog-image {
+    max-width: 100%;
+    transition: transform 0.2s ease-in-out;
 }
 
-.blog-link {
-    cursor: pointer;
-}
-
-.blog-link h4 {
-    text-transform: none;
-}
-
-.blog-link::before {
-    position: absolute;
-    z-index: -1;
-    content: '';
-    min-width: calc(100% + 20px);
-    min-height: calc(150px);
-    top: -2vh;
-    left: -1vw;
-    background-color: transparent;
-    
-    overflow: visible;
-
-    border-radius: 12px;
-    box-shadow: none;
-    border-top: none;
-
-    
-    transition: background-color 0.01s ease, box-shadow 0.2s , border-top;
-}
-
-.blog-link:hover::before {
-    background-color: rgba(233, 231, 231, 0.986);
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.144);
-}
-
-.blog-link div h5, .blog-link:visited div h5, .blog-link:active div h5 {
-    color: #3b3f40;
-}
-
-.blog-link:hover div h5 {
-    color: #13d284 !important;
-}
-
-.blog-date {
-    opacity: 0.8;
-    text-transform: uppercase;
-    font-size: 13px;
-    letter-spacing: 1px;
-    padding-bottom: 5px;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
-.title-icon {
-    transition: transform 0.1s ease-in-out;
-    transform: translateY(0.1vh);
-    color: white;
+.blog-flex:hover .blog-image {
+    transform: scale(1.1);
 }
