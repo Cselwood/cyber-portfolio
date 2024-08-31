@@ -28,9 +28,10 @@ function Card({ currentSection }) {
                 </div>
             </div>
             <h3 className='medium-margin-top small-margin-bottom blocky student-line'>Student - Cyber Security & Forensics MSc</h3>
+            <h3 className='small-margin-bottom  student-line'>(Sep 2024 - Sep 2025)</h3>
             <h3 className='small-margin-bottom uni-line'>
                 <a href="https://twitter.com/UniWestminster" alt="UniWestminster" rel="noreferrer" target='_blank'>
-                    <b>@UniWestminster (Sep 2024 - Sep 2025)</b>       
+                    <b>@UniWestminster</b>       
                 </a>
             </h3>
             <div className="nav-wrapper medium-margin-top">
