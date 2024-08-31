@@ -15,15 +15,13 @@ function Card({ currentSection }) {
         <div className={`${currentSection}`}>
             <b className='blocky hello-line'>Hello</b>
             <div className='name-flex'>
-                <div>
-                    <h1>I'm Chris Selwood</h1>
-                </div>
+                <h1 className='medium-margin-bottom'>I'm Chris Selwood</h1>
                 <div className='links'>
                     <a className='link left-hand-margin' href='https://www.linkedin.com/in/chris-selwood/' alt='LinkedIn' target='select'>
-                        <Icon className='icon' path={mdiLinkedin} size={1.2}/>
+                        <Icon className='icon' path={mdiLinkedin} size={1.5}/>
                     </a>
                     <a className='link left-hand-margin' href='https://github.com/Cselwood' alt='GitHub' target='select'>
-                        <Icon className='icon' path={mdiGithub} size={1.2} />
+                        <Icon className='icon' path={mdiGithub} size={1.5} />
                     </a>
                 </div>
             </div>
