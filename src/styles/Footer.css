@@ -10,6 +10,8 @@
     font-weight: 800;
 }
 
-.footer-link {
-    color: #13d284;
+.footer-text {
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 500;
 }

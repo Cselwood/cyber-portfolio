@@ -15,7 +15,7 @@ function Card({ currentSection }) {
         <div className={`${currentSection}`}>
             <b className='blocky hello-line'>Hello</b>
             <div className='name-flex'>
-                <h1 className='medium-margin-bottom'>I'm Chris Selwood</h1>
+                <h1 className='medium-margin-bottom landing-name'>I'm Chris Selwood</h1>
                 <div className='links'>
                     <a className='link left-hand-margin' href='https://www.linkedin.com/in/chris-selwood/' alt='LinkedIn' target='select'>
                         <Icon className='icon' path={mdiLinkedin} size={1.5}/>
@@ -40,6 +40,10 @@ function Card({ currentSection }) {
                 <div className='nav-section small-padding-bottom ' onClick={() => scrollToSection("experience")} alt="experience">
                     <span className={`${currentSection === 'experience' ? 'active' : ''}`}></span>
                     <h5 className={`nav-link blocky ${currentSection === 'experience' ? 'active' : ''}`}><strong>Experience</strong></h5>
+                </div>
+                <div className='nav-section small-padding-bottom ' onClick={() => scrollToSection("projects")} alt="experience">
+                    <span className={`${currentSection === 'projects' ? 'active' : ''}`}></span>
+                    <h5 className={`nav-link blocky ${currentSection === 'projects' ? 'active' : ''}`}><strong>Projects</strong></h5>
                 </div>
                 <div className='nav-section small-padding-bottom ' onClick={() => scrollToSection("blog")} alt="blog">
                     <span className={`${currentSection === 'blog' ? 'active' : ''}`}></span>

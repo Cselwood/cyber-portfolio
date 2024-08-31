@@ -2,22 +2,31 @@ import React from "react";
 import "../styles/Footer.css";
 
 function Footer() {
+
+    const today = new Date();
+    const year = today.getFullYear();
+
     return (
         <div className="footer-container">
-            <p className="white">Made by </p>
-            <b><a className="footer-link small-margin-bottom chartreuse chartreuse-hover" href="https://www.linkedin.com/in/chris-selwood/" alt="BrittanyChiang.com" target="_blank" rel="noreferrer"> Me. </a></b> 
 
-            <p className="small-padding-top white">Programmed in </p>
-            <b><a className="footer-link small-margin-bottom chartreuse chartreuse-hover" href="https://www.react.dev" alt="React.dev" target="_blank" rel="noreferrer"> ReactJS.</a></b>
+            <h5>Made by </h5>
+            <a href="https://www.linkedin.com/in/chris-selwood/" alt="linkedin.com/in/chris-selwood/" target="_blank" rel="noreferrer"> 
+                <b className="hover2 footer-text">Me</b>
+            </a>
 
-            <p className="small-padding-top white">Deployed in </p> 
-            <b><a className="footer-link medium-padding-bottom chartreuse chartreuse-hover" href="https://www.vercel.com" alt="Vercel.com" target="_blank" rel="noreferrer"> Vercel.</a></b>
+            <h5  className="small-padding-top">Programmed in </h5>
+            <a href="https://www.react.dev" alt="React.dev" target="_blank" rel="noreferrer"> 
+                <b className="hover2 footer-text">ReactJS</b>
+            </a>
 
-            <b className="small-padding-top"><a className=" chartreuse chartreuse-hover" href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/">Free SVG Backgrounds and Patterns by SVGBackgrounds.com </a></b>
+            <h5  className="small-padding-top">Deployed in </h5> 
+            <a href="https://www.vercel.com" alt="Vercel.com" target="_blank" rel="noreferrer"> 
+                <b className="hover2 footer-text">Vercel</b>
+            </a>
 
-            <h4 className="medium-padding-top small-padding-bottom spaced white">ALL RIGHTS RESERVED</h4>
+            <h5 className="small-padding-bottom medium-padding-top spaced footer-text">ALL RIGHTS RESERVED</h5>
 
-            <h4 className="white">&copy; Chris Selwood</h4>
+            <h5 className="footer-text">&copy; {year} Chris Selwood</h5>
 
             
 

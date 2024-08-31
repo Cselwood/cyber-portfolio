@@ -1,6 +1,5 @@
 import React from 'react';
-import Icon from '@mdi/react';
-import { mdiArrowTopRight } from '@mdi/js';
+import CV from "../assets/ChrisSelwoodCV.pdf"
 import Job from "../components/Job"
 
 const Jobs = () => {
@@ -123,13 +122,12 @@ const Jobs = () => {
             {JOB_DATA.map((job, index) => (
                 <Job className="small-margin-bottom" key={index} year={job.year} title={job.title} company={job.company} description={job.description} METRICARRAY={job.metrics} HARDSKILLS={job.hard_skills} SOFTSKILLS={job.soft_skills} site={job.site}/>
             ))}
-            <div>
-                <a className='flex-row-standard small-margin-bottom linkedin' href="https://www.linkedin.com/in/chris-selwood/" alt="linkedin" rel="noreferrer" target='_blank'>
-                    <h3 className='action-name action-name-linkedin'>Learn More!</h3>
-                    <Icon className="action-icon" path={mdiArrowTopRight} size={0.9} />
+            <div className='cvlinkedin-flex'>
+                <a className='small-margin-bottom simple-button' href="https://www.linkedin.com/in/chris-selwood/" alt="linkedin" rel="noreferrer" target='_blank'>
+                    <h4>Learn More!</h4>
                 </a>
-                <a className='flex-row-standard small-margin-top cv' href="https://www.linkedin.com/in/chris-selwood/" alt="resume" rel="noreferrer" target='_blank'>
-                    <h3 className='action-name right-hand-padding'>Check back soon for my updated CV!</h3>
+                <a className='small-margin-top blue-button' href={CV} alt="resume" rel="noreferrer" target='_blank'>
+                    <h4>Download my CV</h4>
                 </a>
             </div>
         </div>

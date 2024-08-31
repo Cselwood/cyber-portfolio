@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Card from "./components/Card";
 import Bio from "./components/Bio";
 import Jobs from "./components/Jobs";
+import Projects from "./components/Projects";
 import Blog from './components/Blog';
 import Footer from "./components/Footer";
 
@@ -15,6 +16,7 @@ function App() {
   const firstSection = useRef(null);
   const secondSection = useRef(null);
   const thirdSection = useRef(null);
+  const fourthSection = useRef(null);
   const {width} = useViewport();
 
   const isMobile = width < 768;
@@ -39,7 +41,7 @@ function App() {
     const handleScroll = () => {
       const viewportHeight = contentRef.current.clientHeight;
       const viewportCenter = contentRef.current.scrollTop + viewportHeight / 2;
-      const sections = [firstSection.current, secondSection.current, thirdSection.current];
+      const sections = [firstSection.current, secondSection.current, thirdSection.current, fourthSection.current];
       let newCurrentSection = '';
 
       sections.forEach((section) => {
@@ -86,11 +88,15 @@ function App() {
             </div>
 
             <div className='global-section medium-padding-top medium-padding-bottom job-background'>
-              <Jobs deviceClass={deviceClass} id="experience" ref={secondSection} />
+              <Jobs deviceClass={deviceClass} ref={secondSection} />
+            </div>
+
+            <div className='global-section medium-padding-top medium-padding-bottom projects-background'>
+              <Projects deviceClass={deviceClass} ref={thirdSection} />
             </div>
 
             <div className='global-section medium-padding-top medium-padding-bottom blog-background'>
-              <div id="blog" ref={thirdSection}> 
+              <div id="blog" ref={fourthSection}> 
                 <Blog deviceClass={deviceClass}/>
               </div>
             </div>
