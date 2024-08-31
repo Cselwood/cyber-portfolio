@@ -41,8 +41,8 @@ function Blog() {
 
     return (
         <div>
-            <h1 className="medium-padding-bottom">Blog</h1>
-            <div className="blog-container medium-margin-bottom">
+            <h1>Blog</h1>
+            <div className="blog-container medium-margin-top">
                 {posts.length > 0 ? (
                     posts.map(post => (
                         <a className="blog-flex shadow backgrounded-2 rounded small-padding-bottom medium-margin-bottom" key={post.id} href={post.url} target="_blank" rel="noopener noreferrer">

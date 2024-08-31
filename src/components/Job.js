@@ -3,7 +3,7 @@ import Icon from '@mdi/react';
 import { mdiArrowDown, mdiArrowUp } from '@mdi/js';
 import "../styles/Job.css"
 
-const Job = ({year, title, company, description, METRICARRAY, HARDSKILLS, SOFTSKILLS}) => {
+const Job = ({year, title, company, description, METRICARRAY, HARDSKILLS, SOFTSKILLS, site}) => {
     const [isExpanded, setIsExpanded] = useState(false);
     const contentRef = useRef(null);
 
@@ -18,11 +18,24 @@ const Job = ({year, title, company, description, METRICARRAY, HARDSKILLS, SOFTSK
 
     return (
         <button className="job-container small-padding-top small-padding-bottom medium-margin-bottom backgrounded shadow rounded" onClick={toggleExpand}>
-            <div className='job-year small-padding-top small-margin-top'><b>{year}</b></div>
             <ul className="job-list flex-column-standard">
-                <li><h2 className='h1-small job-name small-margin-bottom small-margin-top'>{title} · {company}</h2></li>
+                <li><h2 className='h1-small job-name small-margin-bottom small-margin-top'>{title}</h2></li>
                 <li>
-                    <ul className='no-padding small-margin-bottom'>
+                    <div className='job-name small-margin-bottom'>
+                        <b>
+                            {site ? (
+                                <a href={site} rel='noreferrer' alt={company} target='_blank'>
+                                    {company}
+                                </a>
+                            ) : (
+                                company
+                            )}
+                        </b>
+                    </div>
+                </li>
+                <li><div className='job-year small-margin-bottom'><b>{year}</b></div></li>
+                <li>
+                    <ul className='no-padding small-margin-bottom small-margin-top'>
                         {METRICARRAY?.map((metric, index) => (
                             <li key={index} className='small-margin-top'>
                                 <b className='small-margin-bottom small-margin-top'>{metric.metric_title} 
@@ -60,8 +73,6 @@ const Job = ({year, title, company, description, METRICARRAY, HARDSKILLS, SOFTSK
                     <h3 className='small-margin-bottom'>Full Description</h3>
                     <p className='job-description small-margin-bottom'>{description}</p>
                 </div>
-                
-                
             </ul>
         </button>
     );

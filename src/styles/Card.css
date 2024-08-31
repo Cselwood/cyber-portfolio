@@ -17,19 +17,68 @@
     font-weight: 400;
 }
 
+/* IMAGE */
+
+.image {
+    width: 70px;
+}
+
+.image-rounded {
+    border-radius: 15px;
+}
+
 /* LINKS SECTION */
 
-.links {
-    position: absolute;
-    bottom: 0;
-
+.name-flex {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .name-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .name-flex div {
+        margin-bottom: 5vh;
+    }
+
+    .student-line, .uni-line {
+        text-align: center;
+        min-width: 100%;
+        margin: 0 auto;
+    }
+
+    .student-line {
+        margin-top: 10px !important;
+    }
+
+    .hello-line {
+        display: none;
+    }
+}
+
+.name-flex div{
+    max-width: 50%;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: auto;
 }
 
 .link {
-    margin-right: 15px;
-    margin-left: -5px;
+    vertical-align: middle;
+    display: table;
+}
+
+.icon{
+    vertical-align: middle;
 }
 
 .link, .link:visited {
@@ -42,18 +91,6 @@
 
 .link:hover .icon-name, .link:active .icon-name{
     color: #189dc4;
-}
-
-.icon-name-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.icon-name {
-    margin-left: 15px;
-    height: 28px;
-    line-height: 28px;
 }
 
 /* Navigation section */

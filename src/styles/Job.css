@@ -2,20 +2,59 @@
 .job-flex {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+
+    width: 100%;
 }
 
+/* Extra large devices (default) */
 .job-container {
-    position: relative;
     display: flex;
     justify-content: flex-start;
 
+    margin-bottom: 5vh;
+
     border: none;
     text-align: left;
-    
-    padding-left: 40px;
 
     cursor: pointer;
+
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    .job-container {
+        display: flex;
+        justify-content: flex-start;
+
+        margin-bottom: 5vh;
+
+        text-align: left;
+
+        cursor: pointer;
+
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .shadow {
+        box-shadow: none !important;
+    }   
+
+    .global-section {
+        padding-left: 5vw !important;
+        padding-right: 5vw !important;
+    }
+
+    .job-title {
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    .job-skills {
+        margin: 0 auto;
+    }
 }
 
 .job-container:hover .icon-white, .job-container:active .icon-white{
@@ -42,7 +81,6 @@
 /* JOB LISTS AND ITEMS*/
 
 .job-list {
-    margin: 0;
     padding-right: 10%;
     overflow-wrap: break-word;
 }
@@ -76,7 +114,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .skill {
@@ -116,4 +154,37 @@
 
 .flex-row-standard:hover .action-name {
     color: #0eafdb;
+}
+
+@media (max-width: 900px) {
+    .flex-row-standard {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .linkedin {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        background-color: #0eafdb;
+        
+        border-radius: 50px;
+        box-shadow: 0 2px 10px 0 rgba(0,0,0,.15);
+
+        transition: background-color 0.15s ease-in-out;
+    }
+
+    .linkedin h3, .linkedin svg {
+        color: #eeff00;
+    }
+
+    .linkedin:hover{
+        background-color: #14c4f5;
+    }
+
+    .action-name-linkedin {
+        color: #eeff00 !important;
+    }
 }

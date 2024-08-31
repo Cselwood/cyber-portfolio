@@ -13,11 +13,24 @@ function Card({ currentSection }) {
 
     return (
         <div className={`${currentSection}`}>
-            <b className='blocky'>Hello</b>
-            <h1 className='medium-margin-bottom'>I'm Chris Selwood</h1>
-            <h3 className='small-margin-bottom blocky'>Student - Cyber Security & Forensics MSc</h3>
-            <h3 className='small-margin-bottom'>
-                <a href="https://twitter.com/UniWestminster" alt="UniWestminster" rel="chrisselwood.com" target='_blank'><b>@UniWestminster (Sep 2024 - Sep 2025)</b>       
+            <b className='blocky hello-line'>Hello</b>
+            <div className='name-flex'>
+                <div>
+                    <h1>I'm Chris Selwood</h1>
+                </div>
+                <div className='links'>
+                    <a className='link left-hand-margin' href='https://www.linkedin.com/in/chris-selwood/' alt='LinkedIn' target='select'>
+                        <Icon className='icon' path={mdiLinkedin} size={1.2}/>
+                    </a>
+                    <a className='link left-hand-margin' href='https://github.com/Cselwood' alt='GitHub' target='select'>
+                        <Icon className='icon' path={mdiGithub} size={1.2} />
+                    </a>
+                </div>
+            </div>
+            <h3 className='medium-margin-top small-margin-bottom blocky student-line'>Student - Cyber Security & Forensics MSc</h3>
+            <h3 className='small-margin-bottom uni-line'>
+                <a href="https://twitter.com/UniWestminster" alt="UniWestminster" rel="noreferrer" target='_blank'>
+                    <b>@UniWestminster (Sep 2024 - Sep 2025)</b>       
                 </a>
             </h3>
             <div className="nav-wrapper medium-margin-top">
@@ -35,20 +48,7 @@ function Card({ currentSection }) {
                 </div>
             </div>
 
-            <div className='links medium-margin-bottom'>
-                <a className='link small-margin-bottom' href='https://www.linkedin.com/in/chris-selwood/' alt='LinkedIn' target='select'> 
-                    <div className='icon-name-flex'>   
-                        <Icon path={mdiLinkedin} size={1.2}/>
-                        <h3 className='icon-name loose'>/chris-selwood</h3>
-                    </div>
-                </a>
-                <a className='link small-margin-bottom' href='https://github.com/Cselwood' alt='GitHub' target='select'>
-                    <div className='icon-name-flex'>   
-                        <Icon path={mdiGithub} size={1.2} />
-                        <h3 className='icon-name loose'>/cselwood</h3>
-                    </div>
-                </a>
-            </div>
+            
         </div>
     );
 }

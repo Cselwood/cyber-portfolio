@@ -4,16 +4,19 @@ import "../styles/Footer.css";
 function Footer() {
     return (
         <div className="footer-container">
-            <p>
-                Made by 
-                <b>&nbsp;Me!</b> 
-                &nbsp;Based on the designs of 
-                <b><a className="footer-link" href="https://www.brittanychiang.com" alt="BrittanyChiang.com" target="_blank" rel="noreferrer"> Brittany Chiang. </a></b>
-                Programmed in 
-                <b><a className="footer-link" href="https://www.react.dev" alt="React.dev" target="_blank" rel="noreferrer"> ReactJS </a></b>
-                and deployed in 
-                <b><a className="footer-link" href="https://www.vercel.com" alt="Vercel.com" target="_blank" rel="noreferrer"> Vercel.</a></b>
-            </p>
+            <p className="white">Made by </p>
+            <b><a className="footer-link small-margin-bottom chartreuse chartreuse-hover" href="https://www.linkedin.com/in/chris-selwood/" alt="BrittanyChiang.com" target="_blank" rel="noreferrer"> Me. </a></b> 
+
+            <p className="small-padding-top white">Programmed in </p>
+            <b><a className="footer-link small-margin-bottom chartreuse chartreuse-hover" href="https://www.react.dev" alt="React.dev" target="_blank" rel="noreferrer"> ReactJS.</a></b>
+
+            <p className="small-padding-top white">Deployed in </p> 
+            <b><a className="footer-link medium-padding-bottom chartreuse chartreuse-hover" href="https://www.vercel.com" alt="Vercel.com" target="_blank" rel="noreferrer"> Vercel.</a></b>
+
+            <h4 className="medium-padding-top small-padding-bottom spaced white">ALL RIGHTS RESERVED</h4>
+
+            <h4 className="white">&copy; Chris Selwood</h4>
+
         </div>
     );
 }

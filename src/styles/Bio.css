@@ -1,9 +1,77 @@
-.reset-padding {
-    margin-top: -15vh;
-    padding-top: 30vh !important;
-}
-
 .bio-blog-link {
   cursor: pointer;
   width: auto;
+}
+
+.hover2 span {
+    color: #eeff00;
+    transition: color 0.15s ease-in-out;
+}
+
+.hover2:hover span, .hover2:active span{
+    color: white;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.bio-blog-link a b span {
+    display: inline-block;
+    animation: moveUpDown 1.5s infinite ease-in-out;
+}
+
+.bio-blog-link a b span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.bio-blog-link a b span:nth-child(2) {
+    animation-delay: 0.05s;
+}
+
+.bio-blog-link a b span:nth-child(3) {
+    animation-delay: 0.1s;
+}
+
+.bio-blog-link a b span:nth-child(4) {
+    animation-delay: 0.15s;
+}
+
+.bio-blog-link a b span:nth-child(5) {
+    animation-delay: 0.2s;
+}
+
+.svg-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    .svg-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.business {
+    height: auto;
+    width: 120px;
+
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.sainsburys{
+    width: 350px !important;
 }

@@ -67,26 +67,39 @@ function App() {
 
   return (
     <div className={deviceClass}>
-      <div className="mainflex prevent-select">
-        <div className="no-scroll">
-          <Card currentSection={currentSection} />
-        </div>
-        <div
-          className="scroll prevent-select"
+      <div className="main prevent-select">
+        <div className="prevent-select global-padding-margin "
           ref={contentRef}
           onMouseEnter={() => { setContentHover(true) }}
-          onMouseLeave={() => { setContentHover(false) }}
-        >
-          <div id="about" ref={firstSection}>
-            <Bio deviceClass={deviceClass} />
-          </div>
-          <div id="experience" ref={secondSection}>
-            <Jobs deviceClass={deviceClass} />
-          </div>
-          <div id="blog" ref={thirdSection}> 
-            <Blog deviceClass={deviceClass}/>
-          </div>
-          <Footer/>
+          onMouseLeave={() => { setContentHover(false) }}>
+
+            <div className='global-section global-section-first medium-padding-bottom landing-background'>
+              <div>
+                <Card currentSection={currentSection} />
+              </div>
+            </div>
+
+            <div className='global-section medium-padding-top medium-padding-bottom bio-background'>
+              <div id="about" ref={firstSection}>
+                <Bio deviceClass={deviceClass} />
+              </div>
+            </div>
+
+            <div className='global-section medium-padding-top medium-padding-bottom job-background'>
+              <Jobs deviceClass={deviceClass} id="experience" ref={secondSection} />
+            </div>
+
+            <div className='global-section medium-padding-top medium-padding-bottom blog-background'>
+              <div id="blog" ref={thirdSection}> 
+                <Blog deviceClass={deviceClass}/>
+              </div>
+            </div>
+
+            <div className='global-section medium-padding-top medium-padding-bottom footer-background'>
+              <div>
+                <Footer/>
+              </div>
+            </div>
         </div>
       </div>
     </div>
