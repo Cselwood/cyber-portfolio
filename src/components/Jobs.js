@@ -60,7 +60,7 @@ const Jobs = () => {
     ];
 
     const SQL_METRICS = [
-        {metric_title:"Database:", metric_description:"Improved SAP functionality by creating custom 'view' tables for pricing department, saving average time on batch loading by 50%. Automated latest, global, tax values and code uploads to SAP, saving one day of work every week. Taught SQL to two colleagues, tripling response time to correct SAP errors, and reducing call outs to IT by 90%."},
+        {metric_title:"Database:", metric_description:"Improved SAP functionality by creating custom 'view' tables for pricing department, saving average time on batch loading by 50%. Automated latest, global, tax values and code uploads to SAP, saving one day of work every week. Coached SQL to two colleagues, tripling response time to correct SAP errors, and reducing call outs to IT by 90%."},
         {metric_title:"Project Management:", metric_description:"Ran project to correct historical tax errors in billing, recovering £3m in overspend with global franchise partners over 6 month period. Ran project with auditors to isolate and fix SQL errors in batch process, halting over £100,000 of accounting overspends per week globally. Simplified retail downlift and project reports with accounting to allow Excel processing to be faster, saving 25% of processing time per batch."},
     ];
 
@@ -78,7 +78,7 @@ const Jobs = () => {
     ];
 
     const DATA_ANALYST_METRICS = [
-        {metric_title:"Merchandise and Inventory:", metric_description:"Optimised inventory levels, raising internal 'availibility' KPI to high 90% each year. Created bakery stock monitoring forms, reducing waste by 50% and increasing sales year-on-year by 15%."},
+        {metric_title:"Merchandise and Inventory:", metric_description:"Optimised inventory levels, raising internal 'Availability' KPI to high 90% each year. Created bakery stock monitoring forms, reducing waste by 50% and increasing sales year-on-year by 15%."},
         {metric_title:"KPIs", metric_description:"Analysed annual trends on frozen foods, leading to a 5% increase on sales year-on-year. Spent time coaching colleagues on product saving techniques, reducing average waste to 50% of budget."}
     ];
 
