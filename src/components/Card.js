@@ -39,7 +39,7 @@ function Card({ currentSection }) {
                 </div>
                 <div className='nav-section small-padding-bottom ' onClick={() => scrollToSection("experience")} alt="experience">
                     <span className={`${currentSection === 'experience' ? 'active' : ''}`}></span>
-                    <h5 className={`nav-link blocky small-padding-botton ${currentSection === 'experience' ? 'active' : ''}`}><strong>Experience</strong></h5>
+                    <h5 className={`nav-link blocky ${currentSection === 'experience' ? 'active' : ''}`}><strong>Experience</strong></h5>
                 </div>
                 <div className='nav-section small-padding-bottom ' onClick={() => scrollToSection("blog")} alt="blog">
                     <span className={`${currentSection === 'blog' ? 'active' : ''}`}></span>

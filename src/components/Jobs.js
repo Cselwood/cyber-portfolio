@@ -118,7 +118,7 @@ const Jobs = () => {
 
 
     return (
-        <div className="job-flex">
+        <div className="job-flex" id="experience">
             <h1 className='medium-padding-bottom job-title'>Experience</h1>
             {JOB_DATA.map((job, index) => (
                 <Job className="small-margin-bottom" key={index} year={job.year} title={job.title} company={job.company} description={job.description} METRICARRAY={job.metrics} HARDSKILLS={job.hard_skills} SOFTSKILLS={job.soft_skills} site={job.site}/>
