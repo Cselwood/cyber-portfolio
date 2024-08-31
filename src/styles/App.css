@@ -35,14 +35,14 @@ h1, h2, h3, h4, h5, h6, p, b, strong, span {
 }
 
 h1 {
-    font-family: "Playfair Display";
+    font-family: "Playfair Display", "DM Sans";
     font-size: 60px;
     line-height: 68px;
     font-weight: 700;
 }
 
 .h1-small {
-    font-family: "Playfair Display";
+    font-family: "Playfair Display", "DM Sans";
     font-size: 35px !important;
     line-height: 45px;
     font-weight: 700;
@@ -55,7 +55,7 @@ h2 {
 }
 
 .h2-playfair {
-    font-family: "Playfair Display";
+    font-family: "Playfair Display", "DM Sans";
 }
 
 @media (max-width: 900px) {
