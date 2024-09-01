@@ -87,17 +87,13 @@
 
 .business {
     height: auto;
-    width: 120px;
+    width: 80px;
 
     margin-bottom: 30px;
     margin-left: 20px;
     margin-right: 20px;
 
     filter: grayscale(10%);
-}
-
-.sainsburys{
-    width: 350px !important;
 }
 
 

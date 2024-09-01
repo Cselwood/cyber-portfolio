@@ -59,7 +59,7 @@ h2 {
     font-family: "DM Sans", sans-serif;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     h1, .h1-small, h2, .h2-playfair {
         width: 100%;
         text-align: center;
