@@ -49,7 +49,7 @@ const Job = ({year, title, company, description, METRICARRAY, HARDSKILLS, SOFTSK
                     <div className='job-skills small-margin-bottom small-margin-top'>
                         {HARDSKILLS?.map((skill, index) => (
                             <div key={index}>
-                                <p className='hard-skill skill right-hand-margin micro-padding-top micro-padding-bottom micro-margin-bottom rounded'> 
+                                <p className='hard-skill skill right-hand-margin micro-padding-top micro-padding-bottom micro-margin-bottom '> 
                                     {skill.skill_title}
                                 </p>
                             </div>
@@ -57,7 +57,7 @@ const Job = ({year, title, company, description, METRICARRAY, HARDSKILLS, SOFTSK
                         
                         {SOFTSKILLS?.map((skill, index) => (
                             <div key={index}>
-                                <p  className='soft-skill skill right-hand-margin micro-padding-top micro-padding-bottom micro-margin-bottom rounded'>
+                                <p  className='soft-skill skill right-hand-margin micro-padding-top micro-padding-bottom micro-margin-bottom '>
                                     {skill.skill_title}
                                 </p>
                             </div>
@@ -69,7 +69,7 @@ const Job = ({year, title, company, description, METRICARRAY, HARDSKILLS, SOFTSK
                     {isExpanded ? <Icon className='icon-white' path={mdiArrowUp} size={1}/> : <Icon className='icon-white' path={mdiArrowDown} size={1}/>}
                 </div>
                 
-                <div className='job-description-container small-margin-top small-margin-bottom' ref={contentRef}>
+                <div className='job-description-container' ref={contentRef}>
                     <h3 className='small-margin-bottom'>Full Description</h3>
                     <p className='job-description small-margin-bottom'>{description}</p>
                 </div>

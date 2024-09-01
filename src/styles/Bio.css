@@ -1,49 +1,71 @@
-.bio-blog-link {
-  cursor: pointer;
-  width: auto;
+.bio-container {
+    text-align: center;
 }
 
-.hover2 span {
-    color: #eeff00;
-    transition: color 0.15s ease-in-out;
-}
-
-.hover2:hover span, .hover2:active span{
-    color: white;
-}
-
-@keyframes moveUpDown {
-    0%, 100% {
-        transform: translateY(5px);
-    }
-    50% {
-        transform: translateY(-5px);
-    }
-}
-
-.bio-blog-link a b span {
+.bio-experience-link {
     display: inline-block;
-    animation: moveUpDown 1.5s infinite ease-in-out;
 }
 
-.bio-blog-link a b span:nth-child(1) {
-    animation-delay: 0s;
+.industries-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    overflow: visible;
+    
+    margin-left: -20vw;
+    margin-right: -20vw;
+    
 }
 
-.bio-blog-link a b span:nth-child(2) {
-    animation-delay: 0.05s;
+@media (max-width: 1000px) {
+    .industries-flex {
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
 }
 
-.bio-blog-link a b span:nth-child(3) {
-    animation-delay: 0.1s;
+.industry-flex {
+    max-width: 200px;
+    min-width: 200px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
-.bio-blog-link a b span:nth-child(4) {
-    animation-delay: 0.15s;
+.industry-icon {
+    height: 50px;
+    min-height: 50px;
+
+    color: #636467;
 }
 
-.bio-blog-link a b span:nth-child(5) {
-    animation-delay: 0.2s;
+.industry-text {
+    line-height: 28px;
+    color: #3b3f40;
+}
+
+.bio-paragraph {
+    width: 40vw;
+    margin: 0 auto;
+    line-height: 25px;
+}
+
+/* BUSINESS FLEX */
+.business-container {
+    background-color: #f8f9fb;
+    border-radius: 28px;
+
 }
 
 .svg-container {
@@ -70,8 +92,20 @@
     margin-bottom: 30px;
     margin-left: 20px;
     margin-right: 20px;
+
+    filter: grayscale(10%);
 }
 
 .sainsburys{
     width: 350px !important;
+}
+
+
+/* ICONS */
+.bio-icon--arrow {
+    padding-top: 3px;
+}
+
+.bio2-icon--briefcase {
+    color: #1967d2;
 }

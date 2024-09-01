@@ -1,0 +1,29 @@
+.carousel {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+}
+
+.phrases-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousal-phrase {
+    text-align: left;
+    cursor: pointer;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    min-width: 200px;
+    height: 200px;
+    background-color: blue;
+}

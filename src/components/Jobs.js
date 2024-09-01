@@ -123,7 +123,7 @@ const Jobs = () => {
                 <Job className="small-margin-bottom" key={index} year={job.year} title={job.title} company={job.company} description={job.description} METRICARRAY={job.metrics} HARDSKILLS={job.hard_skills} SOFTSKILLS={job.soft_skills} site={job.site}/>
             ))}
             <div className='cvlinkedin-flex'>
-                <a className='small-margin-bottom simple-button' href="https://www.linkedin.com/in/chris-selwood/" alt="linkedin" rel="noreferrer" target='_blank'>
+                <a className='small-margin-bottom simple-button--grey' href="https://www.linkedin.com/in/chris-selwood/" alt="linkedin" rel="noreferrer" target='_blank'>
                     <h4>Learn More!</h4>
                 </a>
                 <a className='small-margin-top blue-button' href={CV} alt="resume" rel="noreferrer" target='_blank'>

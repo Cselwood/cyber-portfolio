@@ -1,57 +1,29 @@
 import React from 'react';
-import Icon from '@mdi/react';
-import { mdiLinkedin, mdiGithub } from '@mdi/js';
+import CV from "../assets/ChrisSelwoodCV.pdf";
+import Chris from "../assets/chris.png"
 import '../styles/Card.css';
 
-function Card({ currentSection }) {    
-    const scrollToSection = (sectionId) => {
-        const section  = document.getElementById(sectionId);
-            if (section) {
-                section.scrollIntoView({behavior: "smooth"});
-            }
-    };
+function Card() {   
 
     return (
-        <div className={`${currentSection}`}>
-            <b className='blocky hello-line'>Hello</b>
-            <div className='name-flex'>
-                <h1 className='medium-margin-bottom landing-name'>I'm Chris Selwood</h1>
-                <div className='links'>
-                    <a className='link left-hand-margin' href='https://www.linkedin.com/in/chris-selwood/' alt='LinkedIn' target='select'>
-                        <Icon className='icon' path={mdiLinkedin} size={1.5}/>
-                    </a>
-                    <a className='link left-hand-margin' href='https://github.com/Cselwood' alt='GitHub' target='select'>
-                        <Icon className='icon' path={mdiGithub} size={1.5} />
-                    </a>
-                </div>
-            </div>
-            <h3 className='medium-margin-top small-margin-bottom blocky student-line'>Student - Cyber Security & Forensics MSc</h3>
-            <h3 className='small-margin-bottom  student-line'>(Sep 2024 - Sep 2025)</h3>
+        <div className='card-container'>
+            <h1 className='landing-name'>Hi, I'm Chris Selwood.</h1>
+            <p className='small-margin-top student-line'>Student - Cyber Security & Forensics MSc</p>
+            <p className='small-margin-bottom'>London, UK. </p>
             <h3 className='small-margin-bottom uni-line'>
                 <a href="https://twitter.com/UniWestminster" alt="UniWestminster" rel="noreferrer" target='_blank'>
-                    <b>@UniWestminster</b>       
+                    <b className='hover3'>@UniWestminster</b>       
                 </a>
-            </h3>
-            <div className="nav-wrapper medium-margin-top">
-                <div className="nav-section small-padding-bottom " onClick={() => scrollToSection("about")} alt="about">
-                    <span className={`${currentSection === 'about' ? 'active' : ''}`}></span>
-                    <h5 className={`nav-link blocky ${currentSection === 'about' ? 'active' : ''}`}><strong>About</strong></h5>
-                </div>
-                <div className='nav-section small-padding-bottom ' onClick={() => scrollToSection("experience")} alt="experience">
-                    <span className={`${currentSection === 'experience' ? 'active' : ''}`}></span>
-                    <h5 className={`nav-link blocky ${currentSection === 'experience' ? 'active' : ''}`}><strong>Experience</strong></h5>
-                </div>
-                <div className='nav-section small-padding-bottom ' onClick={() => scrollToSection("projects")} alt="experience">
-                    <span className={`${currentSection === 'projects' ? 'active' : ''}`}></span>
-                    <h5 className={`nav-link blocky ${currentSection === 'projects' ? 'active' : ''}`}><strong>Projects</strong></h5>
-                </div>
-                <div className='nav-section small-padding-bottom ' onClick={() => scrollToSection("blog")} alt="blog">
-                    <span className={`${currentSection === 'blog' ? 'active' : ''}`}></span>
-                    <h5 className={`nav-link blocky ${currentSection === 'blog' ? 'active' : ''}`}><strong>Blog</strong></h5>
-                </div>
+            </h3> 
+            <div className='button-flex'>  
+                <a className='simple-button small-margin-top' href="https://www.linkedin.com/messaging/compose/?recipient=chris-selwood" alt="linkedin" rel="noreferrer" target='_blank'>
+                    <h4>Contact Me!</h4>
+                </a>
+                <a className='blue-button small-margin-top ' href={CV} alt="resume" rel="noreferrer" target='_blank'>
+                    <h4>Download my CV</h4>
+                </a>
             </div>
-
-            
+            <img className='face large-padding-top large-margin-top' src={Chris} alt='chris'/>
         </div>
     );
 }

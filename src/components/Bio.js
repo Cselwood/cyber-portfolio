@@ -1,70 +1,60 @@
 import React from 'react';
-import {ReactComponent as Sains} from "../assets/sains.svg";
-import {ReactComponent as MS} from "../assets/MS.svg";
-import {ReactComponent as Stef} from "../assets/Stef.svg";
-import {ReactComponent as Zapi} from "../assets/Zapi.svg";
-import {ReactComponent as Dome} from "../assets/dome.svg";
-import {ReactComponent as NewBrand} from "../assets/newbrand.svg";
+import Icon from '@mdi/react';
+import { mdiGreaterThan } from '@mdi/js';
+import { mdiCarElectricOutline  } from '@mdi/js';
+import { mdiShoppingOutline  } from '@mdi/js';
+import { mdiCurrencyGbp  } from '@mdi/js';
+import { mdiStoreOutline  } from '@mdi/js';
+import { mdiAccountHardHatOutline } from '@mdi/js';
 import Degree from "../assets/degree_scan.pdf"
 import "../styles/Bio.css"
 
-const Bio = ({deviceClass}) => {
-
-
-
+const Bio = () => {
     return (
-        <div className="reset-padding prevent-select ${deviceClass}">
-            <h1 className='medium-margin-bottom '>About</h1>
-            <h4 className='small-margin-bottom '>I'm a <a href={Degree} target='_blank'><b className='hover2'>first-class graduate</b></a> of Software Engineering, in London,
-                who has worked in various data, software development and management jobs for over a decade in the 
+        <div className="global-section reset-padding prevent-select bio-container">
+            <h1 className='small-margin-bottom about'>Who am I?</h1>
+                <a href="#jobs">
+                    <p className="hover2 bio-experience-link">
+                        View my work history <Icon className='bio-icon--arrow' path={mdiGreaterThan} size={0.4} />
+                    </p>
+                </a>
+            <h3 className='small-margin-bottom medium-margin-top'>
+                I'm a new MSc student studying Cyber Security & Forensics, <br/>and a <a href={Degree} target='_blank' rel='noreferrer'><b className='hover2'>first-class graduate</b></a> of Software Engineering.
+            </h3>
+            <h3 className='medium-margin-bottom'>
+                I have a decade of experience in varied roles in data,<br/> software development and management. 
+            </h3>
+            <div className="industries-flex medium-margin-bottom">
                 <a href="https://www.zapigroup.com/en/" rel="noreferrer" target="_blank" alt="zapi">
-                    <b className='hover2'> electric vehicle & robotics</b>
-                </a>,
-                <a href="https://www.newbrandmedia.com/" rel="noreferrer" target="_blank" alt="zapi">
-                    <b className='hover2'> marketing</b>
-                </a>,
-                <a href="https://www.marksandspencer.co.uk" rel="noreferrer" target="_blank" alt="marksandspencer">
-                    <b className='hover2'> finance</b>
-                </a>,  
+                    <div className='industry-flex small-margin-bottom small-margin-top'>
+                    <Icon className='small-margin-bottom industry-icon' path={mdiCarElectricOutline } size={1.5}/>
+                        <b className='hover3 industry-text'>Orchestrated national operations for a leading, international, EV firm.</b>
+                    </div>
+                </a>
+                <a href="https://www.marksandspencer.com" rel="noreferrer" target="_blank" alt="marksandspencer">
+                    <div className='industry-flex small-margin-bottom small-margin-top'>
+                        <Icon className='small-margin-bottom industry-icon' path={mdiCurrencyGbp } size={1.5}/>
+                        <b className='hover3 industry-text'> Championed financial operations with advanced database solutions.</b>
+                    </div>
+                </a>
                 <a href="https://www.sainsburys.co.uk" rel="noreferrer" target="_blank" alt="sainsburys">
-                    <b className='hover2'> retail management</b>
-                </a> and
+                    <div className='industry-flex small-margin-bottom small-margin-top'>
+                        <Icon className='small-margin-bottom industry-icon' path={mdiStoreOutline } size={1.5}/>
+                        <b className='hover3 industry-text'>Led a team to success as a retail manager, driving growth and excellence.</b>
+                    </div>
+                </a>
+                <a href="https://www.newbrandmedia.com/" rel="noreferrer" target="_blank" alt="zapi">
+                        <div className='industry-flex small-margin-bottom small-margin-top'>
+                            <Icon className='small-margin-bottom industry-icon' path={mdiShoppingOutline } size={1.5}/>
+                            <b className='hover3 industry-text'>Developed a high-impact website and spearheaded marketing strategies for a start-up.</b>
+                        </div>
+                    </a>
                 <a href="https://stefphilips.com/" rel="noreferrer" target="_blank" alt="stef&philips">
-                    <b className='hover2'> construction</b>
-                </a> industries.
-            </h4>
-            <h4 className='small-margin-bottom '>
-                This September I will be beginning my new journey into my passion; <b className='hover2'>Cyber Security</b>, by studying for my MSc <b className='hover2'>(September 2024 - September 2025)</b>. I couldn't be more excited to dedicate
-                my time and skills to making the digital world a safer place. 
-            </h4>
-            <h4 className='small-padding-bottom small-padding-top '>I recently gained two years of experience in management, exploring my capabilities running large teams under pressure. I managed a team of 15 staff; focusing on consistent delivery, working standards and skills coaching. Previously, I helped large and small companies transform their data analysis.</h4>
-            <h4 className='small-padding-bottom small-padding-top '>For one of my side projects I was lead front-end designer and ReactJS programmer working in co-operation with <a href='https://newbrandmedia.com/' alt="newbrandmedia.com" rel='noreferrer' target='_blank'><b className='hover2'>NewBrandMedia </b></a>for 
-                <a href="https://domekleener.co.uk/" alt="domekleener.co.uk" rel='noreferrer' target='_blank'> <b className='hover2'>Domekleener</b></a>
-                , an exciting security startup in Hertfordshire, UK.</h4>
-            <h4 className='small-padding-bottom small-padding-top small-margin-bottom '>Currently training for my 
-                <a href='https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html' alt="CCNA" rel='noreferrer' target='_blank'> <b className="hover2" >CCNA</b></a>
-                , alongside my Masters.
-                </h4>
-            <h4 className="bio-blog-link medium-margin-bottom ">
-                    Come check out my new  
-                        <a href="https://chrisselwoodblog.blogspot.com" alt="blog" rel="noreferrer" target='_blank'>
-                            &nbsp;
-                            <b className='hover'>
-                                <span>B</span>
-                                <span>L</span>
-                                <span>O</span>
-                                <span>G</span>
-                            </b>
-                        </a>
-            </h4>
-            <h2 className='medium-margin-top medium-margin-bottom '>Companies I've Worked With</h2>
-            <div className='svg-container small-margin-top'>
-                <Zapi className="business"/>
-                <MS className="business"/>
-                <Sains className="business sainsburys"/>
-                <Stef className="business"/>
-                <Dome className="business"/>
-                <NewBrand className="business"/>
+                    <div className='industry-flex small-margin-bottom small-margin-top'>
+                    <Icon className='small-margin-bottom industry-icon' path={mdiAccountHardHatOutline} size={1.5}/>
+                        <b className='hover3 industry-text'>Created innovative workflow solutions; automating processes and accounting.</b>
+                    </div>
+                </a> 
             </div>
         </div>
     );
