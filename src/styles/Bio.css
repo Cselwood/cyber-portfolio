@@ -55,12 +55,23 @@
     color: #3b3f40;
 }
 
-.bio-paragraph {
-    max-width: 55%;
-    width: 40vw;
-    margin: 0 auto;
-    line-height: 25px;
+@media (min-width: 900px) {
+    .bio-paragraph {
+        max-width: 55%;
+        width: 40vw;
+        margin: 0 auto;
+        line-height: 25px;
+    }
 }
+
+@media (max-width: 900px) {
+    .bio-paragraph {
+        max-width: 100%;
+        margin: 0 !important;
+        padding-bottom: 50px
+
+    }
+};
 
 /* BUSINESS FLEX */
 .business-container {
@@ -82,6 +93,14 @@
     .svg-container {
         justify-content: center;
         align-items: center;
+    }
+
+    .job-logo {
+        width: 80% !important;
+    }
+
+    .cvlinkedin-flex {
+        margin-top: 50px;
     }
 }
 

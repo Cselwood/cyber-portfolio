@@ -79,8 +79,10 @@ const Job = ({year, title, company, METRICARRAY, HARDSKILLS, SOFTSKILLS, website
                         </div>
                     </div>
                     <div className='job-skills small-margin-bottom small-padding-top'>
-                        <div className='diamond-flex'>
+                        <div className='diamond-outer'>
                             <Icon className='diamond' path={mdiDiamondOutline} size={1} />
+                        </div>
+                        <div className='diamond-flex'>
                             {SOFTSKILLS?.map((skill, index) => (
                             <div key={index}>
                                 <p  className='soft-skill skill right-hand-margin micro-padding-top micro-padding-bottom '>
