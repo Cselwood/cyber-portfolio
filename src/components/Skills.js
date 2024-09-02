@@ -3,7 +3,9 @@ import "../styles/Skills.css";
 
 function Skills() {
     return(
-        <div></div>
+        <div>
+            
+        </div>
     );
 }
 

@@ -1,0 +1,67 @@
+.certs-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+
+    min-height: 50vh;
+}
+
+.ccna-container {
+    width: 400px;
+    min-height: 40vh;
+    border-radius: 28px;
+    background-color: #e4f5fd;
+
+    align-items: center;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.ccna-container p {
+    text-align: left;
+}
+
+.certs-svg-container {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.certs-title {
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+
+    width: 80%;
+
+    min-height: 120px;
+}
+
+.certs-description {
+    width: 100%;
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+
+    width: 80%;
+}
+
+.earned-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* SVG */
+.bio-svg {
+    max-width: 120px;
+    opacity: 0.9;
+}

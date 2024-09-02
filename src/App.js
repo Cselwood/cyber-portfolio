@@ -26,8 +26,8 @@ function App() {
 
       <div id="about" className='global-section-shallow medium-padding-top medium-padding-bottom bio-background'>
         <Bio/>
-        <Skills/>
         <Bio2/>
+        <Skills/>
       </div>
 
       <div className='global-section medium-padding-top medium-padding-bottom skills-background'>

@@ -19,40 +19,40 @@ const Bio = () => {
                     </p>
                 </a>
             <h3 className='small-margin-bottom medium-margin-top'>
-                I'm a new MSc student studying Cyber Security & Forensics, <br/>and a <a href={Degree} target='_blank' rel='noreferrer'><b className='hover2'>first-class graduate</b></a> of Software Engineering.
+                I'm a new MSc student studying Cyber Security & Forensics, and a <a href={Degree} target='_blank' rel='noreferrer'><b className='hover2'>first-class graduate</b></a> of Software Engineering.
             </h3>
             <h3 className='medium-margin-bottom'>
-                I have a decade of experience in varied roles in data,<br/> software development and management. 
+                I have a decade of experience in varied roles in data, software development and management. 
             </h3>
             <div className="industries-flex medium-margin-bottom">
                 <a href="https://www.zapigroup.com/en/" rel="noreferrer" target="_blank" alt="zapi">
                     <div className='industry-flex small-margin-bottom small-margin-top'>
                     <Icon className='small-margin-bottom industry-icon' path={mdiCarElectricOutline } size={1.5}/>
-                        <b className='hover3 industry-text'>Orchestrated national operations for a leading, international, EV firm.</b>
+                        <p className='hover2 industry-text'>Orchestrated national operations for a leading, international, EV firm.</p>
                     </div>
                 </a>
                 <a href="https://www.marksandspencer.com" rel="noreferrer" target="_blank" alt="marksandspencer">
                     <div className='industry-flex small-margin-bottom small-margin-top'>
                         <Icon className='small-margin-bottom industry-icon' path={mdiCurrencyGbp } size={1.5}/>
-                        <b className='hover3 industry-text'> Championed financial operations with advanced database solutions.</b>
+                        <p className='hover2 industry-text'> Championed financial operations with advanced database solutions.</p>
                     </div>
                 </a>
                 <a href="https://www.sainsburys.co.uk" rel="noreferrer" target="_blank" alt="sainsburys">
                     <div className='industry-flex small-margin-bottom small-margin-top'>
                         <Icon className='small-margin-bottom industry-icon' path={mdiStoreOutline } size={1.5}/>
-                        <b className='hover3 industry-text'>Led a team to success as a retail manager, driving growth and excellence.</b>
+                        <p className='hover2 industry-text'>Led a team to success as a retail manager, driving growth and excellence.</p>
                     </div>
                 </a>
                 <a href="https://www.newbrandmedia.com/" rel="noreferrer" target="_blank" alt="zapi">
                         <div className='industry-flex small-margin-bottom small-margin-top'>
                             <Icon className='small-margin-bottom industry-icon' path={mdiShoppingOutline } size={1.5}/>
-                            <b className='hover3 industry-text'>Developed a high-impact website and spearheaded marketing strategies for a start-up.</b>
+                            <p className='hover2 industry-text'>Developed a high-impact website and spearheaded marketing strategies for a start-up.</p>
                         </div>
                     </a>
                 <a href="https://stefphilips.com/" rel="noreferrer" target="_blank" alt="stef&philips">
                     <div className='industry-flex small-margin-bottom small-margin-top'>
                     <Icon className='small-margin-bottom industry-icon' path={mdiAccountHardHatOutline} size={1.5}/>
-                        <b className='hover3 industry-text'>Created innovative workflow solutions; automating processes and accounting.</b>
+                        <p className='hover2 industry-text'>Created innovative workflow solutions; automating processes and accounting.</p>
                     </div>
                 </a> 
             </div>

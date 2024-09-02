@@ -17,7 +17,7 @@ function Card() {
             </h3> 
             <div className='button-flex'>  
                 <a className='simple-button small-margin-top' href="https://www.linkedin.com/messaging/compose/?recipient=chris-selwood" alt="linkedin" rel="noreferrer" target='_blank'>
-                    <h4>Contact Me!</h4>
+                    <h4>Message Me!</h4>
                 </a>
                 <a className='blue-button small-margin-top ' href={CV} alt="resume" rel="noreferrer" target='_blank'>
                     <h4>Download my CV</h4>

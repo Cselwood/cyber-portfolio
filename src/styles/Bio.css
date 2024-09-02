@@ -56,6 +56,7 @@
 }
 
 .bio-paragraph {
+    max-width: 55%;
     width: 40vw;
     margin: 0 auto;
     line-height: 25px;
@@ -79,7 +80,6 @@
 
 @media (max-width: 900px) {
     .svg-container {
-        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
