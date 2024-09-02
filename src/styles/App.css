@@ -39,30 +39,6 @@ h1, h2, h3, h4, h5, h6, p, b, strong, span {
     color: #3b3f40;
 }
 
-h1 {
-    font-size: 60px;
-    line-height: 68px;
-    font-weight: 700;
-}
-
-.h1-small {
-    font-family: "Playfair Display", serif;
-    font-size: 35px !important;
-    line-height: 45px;
-    font-weight: 700;
-}
-
-h2 {
-    font-size: 32px;
-    line-height: 40px;
-    font-weight: 700;
-}
-
-.h2-playfair {
-    font-family: "Playfair Display", serif;
-    font-family: "DM Sans", sans-serif;
-}
-
 @media (max-width: 1200px) {
     h1, .h1-small, h2, .h2-playfair {
         width: 100%;
@@ -70,8 +46,20 @@ h2 {
     }
 }
 
+h1 {
+    font-size: 60px;
+    line-height: 68px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
 h3 {
-    font-size: 16px;
+    font-size: 25px;
     line-height: normal;
     font-weight: 600;
     
@@ -150,7 +138,7 @@ a:hover, a:active{
     color: #1967d2;
 }
 
-.simple-button, .simple-button--grey, .simple-button--blue, .blue-button {
+.simple-button, .simple-button--grey, .simple-button--blue, .simple-button--white, .blue-button {
     display: inline-block;
     width: auto;
 
@@ -197,6 +185,15 @@ a:hover, a:active{
     background-color: #CBDCE4;
 }
 
+.simple-button--white {
+    background-color: #fff;
+    border: black 2px solid;
+}
+
+.simple-button--white:hover {
+    background-color: rgb(238, 238, 238)
+}
+
 
 /* BLUE BUTTON */
 
@@ -228,7 +225,7 @@ a:hover, a:active{
 }
 
 .job-background {
-    background-color: #f8f9fb;
+    background-color: #ffffff;
 }
 
 .projects-background {
@@ -302,6 +299,7 @@ a:hover, a:active{
 .medium-margin-bottom {margin-bottom: 10vh;}
 .small-margin-top {margin-top: 2vh;}
 .small-margin-bottom {margin-bottom: 2vh;}
+
 .micro-margin-top {margin-top: 5px;}
 .micro-margin-bottom {margin-bottom: 5px;}
 

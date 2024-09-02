@@ -41,7 +41,7 @@ function App() {
         <Projects/>
       </div>
 
-      <div id="blog" className='global-section medium-padding-top medium-padding-bottom blog-background'>
+      <div id="blog" className='global-section medium-padding-top blog-background'>
         <Blog/>
       </div>
 

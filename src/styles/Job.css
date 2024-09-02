@@ -5,6 +5,7 @@
     flex-wrap: wrap;
 
     width: 100%;
+    text-align: center;
 }
 
 /* Extra large devices (default) */
@@ -12,14 +13,26 @@
     display: flex;
     justify-content: flex-start;
 
+    background-color: #e4f5fd;
+
     margin-bottom: 5vh;
+    border-radius: 28px;
 
     border: none;
-    text-align: left;
-
-    cursor: pointer;
+    text-align: center;
 
     margin: 0 auto;
+}
+
+.job-list-first-flex {
+    border-radius: 28px;
+    width: 100%;
+}
+
+.job-skills {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100%;
 }
 
 @media (max-width: 900px) {
@@ -29,18 +42,10 @@
 
         margin-bottom: 5vh;
 
-        text-align: left;
-
-        cursor: pointer;
-
         width: 100%;
         margin: 0 auto;
     }
-
-    .shadow {
-        box-shadow: none !important;
-    }   
-
+    
     .global-section {
         padding-left: 5vw !important;
         padding-right: 5vw !important;
@@ -51,30 +56,21 @@
         text-align: center;
     }
 
-    .job-skills {
-        margin: 0 auto;
-    }
 }
 
-.job-container:hover .icon-white, .job-container:active .icon-white{
-    color: #189dc4;
-}
-
-.job-container:hover .job-name, .job-container:active .job-name{
-    color: #189dc4;
-}
-
-/* TITLES */
-
-.job-year {
-    width: 120px;
-    max-width: 120px;
-    min-width: 120px;
-    overflow: visible;
-}
+/* TITLES AND INFO */
 
 .job-name {
     transition: color 0.15s ease-in-out;
+}
+
+.job-website {
+    display: inline-block;
+}
+
+.job-logo {
+    width: 15vw;
+    height: auto;
 }
 
 /* JOB LISTS AND ITEMS*/
@@ -86,17 +82,38 @@
 }
 
 /* METRICS */
+.metric-container {
+    border-radius: 28px;
+}
 
 .job-metrics {
     padding: 0;
 }
 
-/* DROPDOWN JOB DESCRIPTION */
-.job-description-container {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.2s ease;
+.metric-title {
+    text-align: left;
+    width: 100%;
+
+    margin-left: 5%;
 }
+
+.metric-dropdown {
+    border-radius: 4px;
+    background-color: #e4f5fd;
+    margin-bottom: 20px;
+}
+
+.metric-bulletpoint {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.job-metric-description {
+    width: 100%;
+    text-align: left;
+}
+
 
 /* ARROW ICON */
 
@@ -112,22 +129,29 @@
 
 .job-skills {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: flex-start;
-    margin-top: 20px;
+    width: 100%;
 }
 
 .skill {
+    display: inline-block;
     padding-right: 20px;
     padding-left: 20px;
+    margin: 0 auto;
     
     transition: all 250ms cubic-bezier(0.1, 0.1, 0, 1);
+}
+
+.skills-outer {
+    text-align: left;
+    width: 100%;
 }
 
 .soft-skill, .hard-skill {
     border-radius: 8px;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .hard-skill {
@@ -148,6 +172,25 @@
 .soft-skill:hover {
     background-color: #26805f;
     color: #dfdfdf;
+}
+
+.diamond-outer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: flex-start;
+}
+
+.diamond-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.diamond {
+    color: #3b3f40;
 }
 
 /* CV & LINKEDIN */

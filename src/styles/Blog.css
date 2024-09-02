@@ -9,6 +9,13 @@
     cursor: pointer;
 }
 
+.blog-title {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+}
+
 /* BLOG POST */
 
 .blog-flex {
@@ -20,10 +27,6 @@
     background-color: white;
 }
 
-.blog-title {
-    font-family: "Playfair Display";
-}
-
 .blog-image {
     max-width: 100%;
     transition: transform 0.2s ease-in-out;
@@ -31,4 +34,11 @@
 
 .blog-flex:hover .blog-image {
     transform: scale(1.1);
+}
+.blog-post-title {
+    font-weight: 600;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+    align-items: center;
 }

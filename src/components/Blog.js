@@ -41,8 +41,8 @@ function Blog() {
 
     return (
         <div>
-            <h1>Blog</h1>
-            <div className="blog-container medium-margin-top">
+            <h1 className="landing-name blog-title">Blog</h1>
+            <div className="blog-container medium-margin-top medium-padding-bottom">
                 {posts.length > 0 ? (
                     posts.map(post => (
                         <a className="blog-flex shadow backgrounded-2 rounded small-padding-bottom medium-margin-bottom" key={post.id} href={post.url} target="_blank" rel="noopener noreferrer">
@@ -50,7 +50,7 @@ function Blog() {
                                     <img className="blog-image shadow small-margin-bottom" src={post.imageUrl} alt={post.title} />
                             )}
                             <div className="small-padding-top" >
-                                <h3 className="small-padding-bottom blog-title left-hand-padding right-hand-padding">{post.title} </h3>
+                                <p className="small-padding-bottom blog-post-title left-hand-padding right-hand-padding">{post.title} </p>
                                 <p className="loose">{formatDate(post.published)}</p>
                             </div>
                         </a>

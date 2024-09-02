@@ -12,7 +12,11 @@ import "../styles/Bio.css"
 const Bio = () => {
     return (
         <div className="global-section reset-padding prevent-select bio-container">
-            <h1 className='small-margin-bottom about'>Who am I?</h1>
+            <h1 className='small-margin-bottom about '>
+                <b className='landing-name'>
+                    Who am I?
+                </b>
+            </h1>
                 <a href="#jobs">
                     <p className="hover2 bio-experience-link">
                         View my work history <Icon className='bio-icon--arrow' path={mdiGreaterThan} size={0.4} />

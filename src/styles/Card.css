@@ -40,6 +40,10 @@
     height: auto;
 }
 
+.landing-uni {
+    display: inline-block;
+}
+
 .blocky {
     text-transform: uppercase;
     letter-spacing: 2px;

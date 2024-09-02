@@ -12,7 +12,7 @@ function Card() {
             <p className='small-margin-bottom'>London, UK. </p>
             <h3 className='small-margin-bottom uni-line'>
                 <a href="https://twitter.com/UniWestminster" alt="UniWestminster" rel="noreferrer" target='_blank'>
-                    <b className='hover3'>@UniWestminster</b>       
+                    <p className='hover3 landing-uni'>@UniWestminster</p>       
                 </a>
             </h3> 
             <div className='button-flex'>  
