@@ -3,7 +3,7 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    justify-content: space-evenly;
+    justify-content: center;
 
     min-height: 50vh;
 }

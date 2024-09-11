@@ -22,7 +22,7 @@ const Bio2 = () => {
             </p>
 
             <div className='certs-container'>
-                <div className='ccna-container left-hand-margin right-hand-margin medium-margin-bottom small-padding-bottom'>
+                <div className='ccna-container shadow left-hand-margin right-hand-margin medium-margin-bottom small-padding-bottom'>
                     <div className='certs-svg-container'>
                         <img className='bio-svg' src={ccna} alt="ccna"/>
                     </div>
@@ -41,11 +41,11 @@ const Bio2 = () => {
                     <b className='certs-description small-margin-top small-margin-bottom hover2'>
                         December, 2024
                     </b>
-                    <a className='small-margin-top small-margin-bottom simple-button--blue' href='https://www.cisco.com/c/en/us/training-events/training-certifications/exams/current-list/ccna-200-301.html' alt="cisco" target='_blank' rel='noreferrer'>
+                    <a className='small-margin-top small-margin-bottom blue-button' href='https://www.cisco.com/c/en/us/training-events/training-certifications/exams/current-list/ccna-200-301.html' alt="cisco" target='_blank' rel='noreferrer'>
                         <h4>Show me more.</h4>
                     </a>
                 </div>
-                <div className='ccna-container left-hand-margin right-hand-margin medium-margin-bottom small-padding-bottom'>
+                <div className='ccna-container shadow left-hand-margin right-hand-margin medium-margin-bottom small-padding-bottom'>
                     <div className='certs-svg-container'>
                         <img className='bio-svg' src={uni} alt="Uni"/>
                     </div>
@@ -62,14 +62,14 @@ const Bio2 = () => {
                     <b className='certs-description small-margin-top small-margin-bottom hover2'>
                         September, 2025
                     </b>
-                    <a className='small-margin-top simple-button--blue' href='https://www.westminster.ac.uk/computer-science-and-engineering-courses/2024-25/september/full-time/cyber-security-and-forensics-msc' alt="course-details" target='_blank' rel='noreferrer'>
+                    <a className='small-margin-top blue-button' href='https://www.westminster.ac.uk/computer-science-and-engineering-courses/2024-25/september/full-time/cyber-security-and-forensics-msc' alt="course-details" target='_blank' rel='noreferrer'>
                         <h4>Check it out!</h4>
                     </a>
                 </div>
             </div>
 
-            <a className='blue-button medium-margin-bottom' href="https://www.linkedin.com/messaging/compose/?recipient=chris-selwood" alt="linkedin" rel="noreferrer" target='_blank'>
-                <h4>Ask me how it's going.</h4>
+            <a className='simple-button--white medium-margin-bottom' href="https://www.linkedin.com/messaging/compose/?recipient=chris-selwood" alt="linkedin" rel="noreferrer" target='_blank'>
+                <h4>Ask me how it's going!</h4>
             </a>
 
             <h1 className='small-margin-bottom'>
