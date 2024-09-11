@@ -13,7 +13,7 @@ const Job = ({year, title, company, METRICARRAY, HARDSKILLS, SOFTSKILLS, website
     const CompanySVG = (company) => {
         switch (company) {
             case "Sainsbury's":
-                return <Sains className='job-logo small-margin-bottom'/>;
+                return <Sains className='job-logo'/>;
             case "Marks & Spencer":
                 return <MS className='job-logo small-margin-bottom'/>;
             case "Stef & Philips":
@@ -25,24 +25,23 @@ const Job = ({year, title, company, METRICARRAY, HARDSKILLS, SOFTSKILLS, website
         }
     };
 
-    const [selectedMetric, setSelectedMetric] = useState(METRICARRAY[0]?.metric_title || '');
-    const [descriptionVisible, setDescriptionVisible] = useState(true);
-    const descriptionRef = useRef(null);
-    const containerRef = useRef(null);
     return (
-        <div className="job-container small-padding-bottom medium-margin-bottom" >
-            <div className="job-list flex-column-standard">
+        <div className="job-container shadow small-padding-bottom medium-margin-bottom" >
+            <div className="job-list">
                 <div className='job-list-first-flex small-padding-bottom medium-padding-top'>
-                    <div>
-                        {CompanySVG(company)}
-                    </div>
-                    <div><h3 className='job-name small-padding-bottom small-margin-bottom small-padding-top small-margin-top '>{title}</h3></div>
-                    <div className='small-margin-bottom'>
+                    <div className='description-width'>
+                        <h3 className='job-name small-padding-bottom small-margin-bottom small-padding-top small-margin-top '>
+                            {title}
+                        </h3>
                         <b>{year}</b>
                         <p className='small-padding-top small-margin-bottom'>{location}</p>
-                        <a className='job-website' href={website} alt={company} rel="noreferrer" target='_blank'>
-                            <p className="hover2">Go to {weblabel}</p>
+                        <a className='job-website small-margin-bottom small-margin-top blue-button' href={website} alt={company} rel="noreferrer" target='_blank'>
+                            <p>Go to {weblabel}</p>
                         </a>
+                    </div>
+                    
+                    <div className='company-width'>
+                        {CompanySVG(company)}
                     </div>
                 </div>
                 <div className='metric-container'>

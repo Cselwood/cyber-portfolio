@@ -30,9 +30,6 @@ function App() {
         <Skills/>
       </div>
 
-      <div className='global-section medium-padding-top medium-padding-bottom skills-background'>
-      </div>
-
       <div id="jobs" className='global-section medium-padding-top medium-padding-bottom job-background'>
         <Jobs/>
       </div>
@@ -45,7 +42,7 @@ function App() {
         <Blog/>
       </div>
 
-      <div className='global-section medium-padding-top medium-padding-bottom footer-background'>
+      <div className='global-section small-padding-top small-padding-bottom footer-background'>
         <Footer/>
       </div>
 

@@ -35,7 +35,7 @@ function Navbar() {
         <div className={`navbar ${scrolled ? "scrolled" : ""}`}>
             <div className="nav-flex global-section-shallow">
                 <a href="#home">
-                    <h4 className="nav-item nav-logo">
+                    <h4 className="nav-item landing-name">
                         CS
                     </h4>
                 </a>
@@ -75,7 +75,7 @@ function Navbar() {
                 <div className="nav-holding-container">
                     <div className="hidden-nav-flex">
                         <a href="#home">
-                            <h4 className="nav-item nav-logo">
+                            <h4 className="nav-item landing-name">
                                 CS
                             </h4>
                         </a>

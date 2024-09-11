@@ -1,8 +1,22 @@
 .footer-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: row;
     text-align: center;
     justify-content: center;
+
+    width: 33%;
+}
+
+.inner-container-text {
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .spaced {
@@ -12,6 +26,5 @@
 
 .footer-text {
     font-size: 14px;
-    line-height: normal;
     font-weight: 500;
 }
