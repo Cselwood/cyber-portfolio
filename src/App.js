@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
 import Card from "./components/Card";
@@ -10,9 +11,11 @@ import Projects from "./components/Projects";
 import Blog from './components/Blog';
 import Footer from "./components/Footer";
 
+import Continule from "./components/Continule";
+
 import './styles/App.css';
 
-function App() {
+function MainPage() {
   return (
     <div id="home" className="main prevent-select">
 
@@ -47,6 +50,22 @@ function App() {
       </div>
 
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route 
+          path="/continule" 
+          element={
+              <Continule />
+          } 
+        />
+      </Routes>
+    </Router>
   );
 }
 

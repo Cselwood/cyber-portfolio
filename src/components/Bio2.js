@@ -26,7 +26,7 @@ const Bio2 = () => {
                     <div className='certs-svg-container'>
                         <img className='bio-svg' src={ccna} alt="ccna"/>
                     </div>
-                    <h3 className='certs-title'>
+                    <h3 className='certs-title landing-name'>
                         <b>
                             Cisco Certified Network Associate
                         </b>
@@ -49,7 +49,7 @@ const Bio2 = () => {
                     <div className='certs-svg-container'>
                         <img className='bio-svg' src={uni} alt="Uni"/>
                     </div>
-                    <h3 className='certs-title'>
+                    <h3 className='certs-title landing-name'>
                         <b>
                             MSc Cyber Security & Forensics
                         </b>
