@@ -5,7 +5,7 @@ import Job from "../components/Job"
 const Jobs = () => {
 
     const MANAGER_METRICS = [
-        {metric_title:"Store Performance:", metric_description:"Increased sales by 10% through availability, decreased costs by 30% through labour saving strategies. "},
+        {metric_title:"Store Performance:", metric_description:"Increased sales by 10% through availability, decreased costs by 25% through labour saving strategies. "},
         {metric_title:"Inventory Management:", metric_description:"Utilised JIT management to reduce fresh waste by 30%. Ran project to create zero warehouse inventory, leading to 40% increase in scanning speed on ambient lines, and 12.5% on chilled."},
         {metric_title:"KPIs:", metric_description:"Improved labour scheduling resulting in 25% budget saving on hours spent. Successful 'RGIS' count variant of only 1%, beating shrinkage targets by 4%. Achieved a 100% score for two years on license-to-trade."}
     ];
