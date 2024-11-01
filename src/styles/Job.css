@@ -12,29 +12,9 @@
     display: flex;
     justify-content: flex-start;
 
-    
-    background-color: #f8f9fb;
-
-    margin-bottom: 5vh;
-    border-radius: 28px;
-
     border: none;
 
     margin: 0 auto;
-}
-
-.job-list-first-flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    justify-content: space-between;
-}
-
-.description-width {
-    max-width: 50%;
-
-    display: inline-block;
 }
 
 .company-width {
@@ -71,11 +51,6 @@
 }
 
 /* TITLES AND INFO */
-
-.landing-name {
-    text-align: center;
-}
-
 .job-name {
     display: inline-block;
     transition: color 0.15s ease-in-out;
@@ -92,13 +67,6 @@
 }
 
 /* JOB LISTS AND ITEMS*/
-
-.job-list {
-    display: inline-block;
-    overflow-wrap: break-word;
-    padding-left: 10%;
-    padding-right: 10%;
-}
 
 /* METRICS */
 .metric-container {
@@ -157,7 +125,6 @@
     padding-left: 20px;
     margin: 0 auto;
     
-    transition: all 250ms cubic-bezier(0.1, 0.1, 0, 1);
 }
 
 .skills-outer {
@@ -167,7 +134,6 @@
 
 .soft-skill, .hard-skill {
     border-radius: 8px;
-    margin-bottom: 20px;
     margin-left: 20px;
 }
 
@@ -212,8 +178,9 @@
 
 /* CV & LINKEDIN */
 .cvlinkedin-flex {
+    margin-top: 20px;
     display: flex;
-    flex-direction: column;
-    justify-items: center;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
 }

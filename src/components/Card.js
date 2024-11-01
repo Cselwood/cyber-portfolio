@@ -6,24 +6,22 @@ import '../styles/Card.css';
 function Card() {   
 
     return (
-        <div className='card-container'>
-            <h1 className='landing-name'>Hi, I'm Chris Selwood.</h1>
-            <p className='small-margin-top student-line'>Student - Cyber Security & Forensics MSc</p>
-            <p className='small-margin-bottom'>London, UK. </p>
-            <h3 className='small-margin-bottom uni-line'>
-                <a href="https://twitter.com/UniWestminster" alt="UniWestminster" rel="noreferrer" target='_blank'>
-                    <p className='hover3 landing-uni'>@UniWestminster</p>       
+        <div className='card-container medium-padding-bottom'>
+            <h2 className='alt small-padding-bottom'>Chris Selwood</h2>
+            <p className='small-margin-bottom small-margin-top'>
+                I'm an MSc Cyber Security student, decade experienced data analyst, and first-class software engineering graduate.
+            </p>
+            <p className='small-margin-bottom'>London, UK</p>
+            <div className='button-flex small-margin-bottom small-padding-bottom'>  
+                <a className='simple-button--white small-margin-top right-hand-margin' href="https://www.linkedin.com/messaging/compose/?recipient=chris-selwood" alt="linkedin" rel="noreferrer" target='_blank'>
+                    <p>Say hello!</p>
                 </a>
-            </h3> 
-            <div className='button-flex'>  
-                <a className='simple-button small-margin-top' href="https://www.linkedin.com/messaging/compose/?recipient=chris-selwood" alt="linkedin" rel="noreferrer" target='_blank'>
-                    <h4>Message Me!</h4>
-                </a>
-                <a className='blue-button small-margin-top ' href={CV} alt="resume" rel="noreferrer" target='_blank'>
-                    <h4>Download my CV</h4>
+                <a className='blue-button small-margin-top' href={CV} alt="resume" rel="noreferrer" target='_blank'>
+                    <p>Download CV</p>
                 </a>
             </div>
-            <img className='face large-padding-top large-margin-top' src={Chris} alt='chris'/>
+            
+            <div className='seperator small-margin-top small-margin-bottom'></div> 
         </div>
     );
 }

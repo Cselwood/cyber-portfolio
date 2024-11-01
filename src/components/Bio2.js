@@ -15,86 +15,95 @@ import "../styles/Certs.css"
 
 const Bio2 = () => {
     return (
-        <div className="reset-padding prevent-select bio-container medium-margin-top">
-            <h1 className='small-margin-bottom landing-name'>What I'm studying.</h1>
-            <p className='small-padding-top medium-margin-bottom bio-paragraph'>
-                This September, I’m embarking on an exciting new chapter by pursuing an MSc (September 2024 - September 2025) while also studying for my CCNA certification. I'm eager to deepen my expertise and contribute to making the digital world a safer place.
-            </p>
+        <div className="medium-margin-top">
+            <h2 className='alt medium-margin-bottom'>What I'm studying.</h2>
 
-            <div className='certs-container'>
-                <div className='ccna-container shadow left-hand-margin right-hand-margin medium-margin-bottom small-padding-bottom'>
-                    <div className='certs-svg-container'>
-                        <img className='bio-svg' src={ccna} alt="ccna"/>
-                    </div>
-                    <h3 className='certs-title landing-name'>
-                        <b>
-                            Cisco Certified Network Associate
-                        </b>
-                    </h3>
-                    <p className='certs-description'>
-                        <b>
-                            Cisco CCNA 200-301
-                        </b>
-                    </p>
-                    <p className='certs-description small-margin-top'>Network Fundamentals, IP Connectivity, Security Basics</p>
-                    <b className='certs-description small-margin-top'>Estimated Completion Date:</b>
-                    <b className='certs-description small-margin-top small-margin-bottom hover2'>
-                        December, 2024
-                    </b>
-                    <a className='small-margin-top small-margin-bottom blue-button' href='https://www.cisco.com/c/en/us/training-events/training-certifications/exams/current-list/ccna-200-301.html' alt="cisco" target='_blank' rel='noreferrer'>
-                        <h4>Show me more.</h4>
-                    </a>
-                </div>
-                <div className='ccna-container shadow left-hand-margin right-hand-margin medium-margin-bottom small-padding-bottom'>
-                    <div className='certs-svg-container'>
-                        <img className='bio-svg' src={uni} alt="Uni"/>
-                    </div>
-                    <h3 className='certs-title landing-name'>
-                        <b>
-                            MSc Cyber Security & Forensics
-                        </b>
-                    </h3>
-                    <b className='certs-description'>Beginning Date:</b>
-                    <b className='certs-description small-margin-top small-margin-bottom hover2'>
-                        September, 2024
-                    </b>
-                    <b className='certs-description small-margin-top'>Completion Date:</b>
-                    <b className='certs-description small-margin-top small-margin-bottom hover2'>
-                        September, 2025
-                    </b>
-                    <a className='small-margin-top blue-button' href='https://www.westminster.ac.uk/computer-science-and-engineering-courses/2024-25/september/full-time/cyber-security-and-forensics-msc' alt="course-details" target='_blank' rel='noreferrer'>
-                        <h4>Check it out!</h4>
-                    </a>
-                </div>
-            </div>
+            <h4>MSC Cyber Security & Forensics</h4>
+            <img className='bio-svg' src={uni} alt="Uni"/>
+            <p className='small-padding-bottom'>Sep. 2024 - Sep. 2025</p>
 
-            <a className='simple-button--white medium-margin-bottom' href="https://www.linkedin.com/messaging/compose/?recipient=chris-selwood" alt="linkedin" rel="noreferrer" target='_blank'>
-                <h4>Ask me how it's going!</h4>
+            <ul className='small-margin-top small-padding-top small-margin-bottom small-padding-bottom'>
+                <li>
+                    <p><b>Mastering Core Frameworks:</b> PTES, STRIDE, DREAD, Attack Trees and advanced risk assessment.</p>
+                </li>
+                <li>
+                    <p><b>Real-world Environments:</b> Network configuration, vulnerability analysis, and secure protocol deployment.</p>
+                </li>
+                <li>
+                    <p><b>Deep dive into encryption:</b> Advanced AES, RSA, and future-proof cryptographic techniques.</p>
+                </li>
+                <li>
+                    <p><b>Blue-team defence skills:</b> Threat detection, response, and proactive system fortification.</p>
+                </li>
+                <li>
+                    <p><b>Advanced Penetration Testing:</b> Cutting-edge techniques for identifying and mitigating security vulnerabilities.</p>
+                </li>
+            </ul>
+
+            <a className='blue-button small-margin-top medium-margin-bottom small' href='https://www.westminster.ac.uk/computer-science-and-engineering-courses/2024-25/september/full-time/cyber-security-and-forensics-msc' alt="course-details" target='_blank' rel='noreferrer'>
+                <p>Check it out!</p>
             </a>
 
-            <h1 className='small-margin-bottom'>
-                <b className='landing-name'>
-                    What I've earned.
-                </b>
-            </h1>
-            <div className='earned-container medium-margin-bottom medium-margin-top'>
-                <img className='bio-svg small-padding-bottom' src={uni} alt="Uni"/>
-                <h3 className='small-margin-top'>BEng Software Engineering</h3>
-                <p className='small-padding-top'>1st Class with Honours (2017)</p>
-                <p className='small-padding-top'>Winner of High Achievement Scholarship Award (2015)</p>
-                <p className='small-padding-top'>Dean's List Member (2015, 2016, 2017)</p>
-                <a href={Degree} target='_blank' alt="Degree" rel="noreferrer">
-                    <p className='small-padding-top hover2'>See my degree.</p>
-                </a>
-            </div>
+            <div className='seperator small-margin-bottom'></div> 
 
-            <div className='business-container medium-padding-bottom'>
-                <Icon className='medium-margin-top bio2-icon--briefcase' path={mdiBriefcaseOutline} size={2} />
-                <h2 className='small-margin-top small-margin-bottom'>Companies I've worked with.</h2>
-                <a className='simple-button--grey small-margin-bottom small-margin-top' href='#jobs'>
-                    <p>Learn More</p>
-                </a>
-                <p className='left-hand-padding right-hand-padding small-margin-top medium-margin-bottom'>Collaborating with industry leaders and dynamic small businesses to drive success.</p>
+            
+            <h4 className='small-margin-top small-padding-top'>Cisco Certified Network Associate - CCNA 200-301</h4>
+            <img className='bio-svg' src={ccna} alt="Uni"/>
+            <p className='small-padding-bottom'>Estimated Jan. 2025</p>
+
+            <ul className='small-margin-top small-padding-top small-margin-bottom small-padding-bottom'>
+                <li>
+                    <p><b>Network Fundamentals:</b> Mastering IP, subnetting, and routing basics.</p>
+                </li>
+                <li>
+                    <p><b>Switching & Routing:</b> Configuring Cisco switches and routers.</p>
+                </li>
+                <li>
+                    <p><b>Security Essentials:</b> Implementing secure network protocols.</p>
+                </li>
+                <li>
+                    <p><b>Troubleshooting Skills:</b> Diagnosing and resolving network issues.</p>
+                </li>
+                <li>
+                    <p><b>IP Services:</b> Managing DHCP, NAT, and DNS setups.</p>
+                </li>
+            </ul>
+
+            <a className='simple-button--white medium-margin-bottom' href="https://www.linkedin.com/messaging/compose/?recipient=chris-selwood" alt="linkedin" rel="noreferrer" target='_blank'>
+                <p>Ask me more!</p>
+            </a>
+
+            <div className='seperator small-margin-bottom small-padding-bottom'></div> 
+
+            <h2 className='alt small-margin-top small-padding-top small-margin-bottom'>What I've earned.</h2>
+
+            <ul className='small-margin-bottom small-padding-bottom'>
+                <li>
+                    <img className='bio-svg small-padding-top' src={uni} alt="Uni"/>
+                </li>
+                <li>
+                    <p><b>Course:</b> BEng Software Engineering</p>
+                </li>
+                <li>
+                    <p><b>Class:</b> First-Class with Honours (1:1)</p>
+                </li>
+                <li>
+                    <p><b>Graduated:</b> July 2017</p>
+                </li>
+                <li>
+                    <p className=''>Winner of High Achievement Scholarship Award (2015)</p>
+                </li>
+                <li>
+                    <p className=''>Dean's List Member (2015, 2016, 2017)</p>
+                </li>
+                <li>
+                    <a href={Degree} target='_blank' alt="Degree" rel="noreferrer">
+                        <p className='hover2'>See my degree.</p>
+                    </a>
+                </li>
+            </ul>
+
+            <h2 className='alt small-margin-top medium-padding-top medium-margin-bottom'>Companies I've worked with.</h2>
                 <div className='svg-container small-margin-top'>
                     <Zapi className="business"/>
                     <MS className="business"/>
@@ -103,7 +112,8 @@ const Bio2 = () => {
                     <Dome className="business"/>
                     <NewBrand className="business"/>
                 </div>
-            </div>
+
+        <div className='seperator small-margin-top small-margin-bottom small-padding-bottom'></div> 
 
         </div>
     );

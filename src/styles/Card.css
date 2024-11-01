@@ -1,43 +1,12 @@
 /* Top Intro */
 .card-container {
-    text-align: center;
     position: relative;
-
-    height: 100%;
-    min-height: 68vh;
+    text-align: left;
 }
 
 .card-container *:not(.face) {
     position: relative;
     z-index: 1; /* Ensures all other content is above the image */
-}
-
-.face {
-    position: absolute; 
-    bottom: 0;
-    left: 50%; 
-    transform: translateX(-50%);
-    width: auto;
-    height: 55%; 
-
-    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
-    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
-}
-
-@media (max-width: 650px) {
-    .face {
-        height: 40%;
-    }
-}
-
-.landing-name {
-    display: inline-block;
-    background: linear-gradient(90deg, #217bfe 0%, #078efb 34%, #ac87eb 68%, #ee4d5d 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    height: auto;
 }
 
 .landing-uni {
@@ -55,6 +24,7 @@
     font-weight: 400;
 }
 
+
 /* LINKS SECTION */
 
 @media (max-width: 350) {
@@ -66,6 +36,6 @@
 /* LINKS */
 .button-flex {
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: row;
 
 }

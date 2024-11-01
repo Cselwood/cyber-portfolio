@@ -101,17 +101,18 @@ const Jobs = () => {
 
 
     return (
-        <div className="job-flex" id="experience">
-            <h1 className='medium-padding-bottom job-title landing-name'>What I've done.</h1>
+        <div id="experience">
+            <h2 className='alt medium-padding-bottom'>What I've done.</h2>
+            
+
             {JOB_DATA.map((job, index) => (
                 <Job className="small-margin-bottom" key={index} year={job.year} title={job.title} company={job.company} description={job.description} METRICARRAY={job.metrics} HARDSKILLS={job.hard_skills} SOFTSKILLS={job.soft_skills} website={job.site} weblabel={job.sitelabel} location={job.location}/>
+                
             ))}
+
             <div className='cvlinkedin-flex'>
-                <a className='small-margin-bottom simple-button--grey' href="https://www.linkedin.com/in/chris-selwood/" alt="linkedin" rel="noreferrer" target='_blank'>
-                    <h4>Learn More!</h4>
-                </a>
-                <a className='small-margin-top blue-button' href={CV} alt="resume" rel="noreferrer" target='_blank'>
-                    <h4>Download my CV</h4>
+                <a className='blue-button left-hand-margin right-hand-margin' href={CV} alt="resume" rel="noreferrer" target='_blank'>
+                    <p>Download CV</p>
                 </a>
             </div>
         </div>

@@ -33,30 +33,25 @@ function Navbar() {
 
     return (
         <div className={`navbar ${scrolled ? "scrolled" : ""}`}>
-            <div className="nav-flex global-section-shallow">
+            <div className="nav-flex">
                 <a href="#home">
-                    <h4 className="nav-item landing-name">
+                    <h4 className="nav-item landing-name alt">
                         CS
                     </h4>
                 </a>
                 <a className="nav-item" href="#about">
-                    <p className="hover3">
+                    <p className="alt hover3">
                         About
                     </p>
                 </a>
                 <a className="nav-item" href="#jobs">
-                    <p className="hover3">
+                    <p className="alt hover3">
                         Experience
                     </p>
                 </a>
                 <a className="nav-item" href="#projects">
-                    <p className="hover3">
+                    <p className="alt hover3">
                         Projects
-                    </p>
-                </a>
-                <a className="nav-item" href="#blog">
-                    <p className="hover3">
-                        Blog
                     </p>
                 </a>
                 <a className='nav-item' href='https://www.linkedin.com/in/chris-selwood/' alt='LinkedIn' target='select'>
@@ -92,11 +87,6 @@ function Navbar() {
                         <a className="nav-item" href="#projects" onClick={toggleNav}>
                             <p className="hover3 nav-link">
                                 Projects
-                            </p>
-                        </a>
-                        <a className="nav-item" href="#blog" onClick={toggleNav}>
-                            <p className="hover3 nav-link">
-                                Blog
                             </p>
                         </a>
                         <a className='nav-item nav-link' href='https://www.linkedin.com/in/chris-selwood/' alt='LinkedIn' target='select'>

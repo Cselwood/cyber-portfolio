@@ -1,35 +1,13 @@
-.bio-container {
-    text-align: center;
-}
-
-.bio-experience-link {
-    display: inline-block;
-}
-
 .industries-flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
     justify-content: center;
-
-    overflow: visible;
-    
-    margin-left: -20vw;
-    margin-right: -20vw;
-    
-}
-
-@media (max-width: 1000px) {
-    .industries-flex {
-        margin-left: 0vw;
-        margin-right: 0vw;
-    }
 }
 
 .industry-flex {
-    max-width: 200px;
-    min-width: 200px;
+    max-width: 100px;
+    min-width: 100px;
 
     display: flex;
     flex-direction: column;
@@ -39,20 +17,15 @@
     align-items: center;
     text-align: center;
 
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
 }
 
 .industry-icon {
     height: 50px;
     min-height: 50px;
 
-    color: #636467;
-}
-
-.industry-text {
-    line-height: 28px;
-    color: #3b3f40;
+    color: #333;
 }
 
 @media (min-width: 900px) {
@@ -85,8 +58,7 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    justify-content: center;
-    margin: 0 auto;
+    justify-content: space-around;
 }
 
 @media (max-width: 900px) {
@@ -106,13 +78,14 @@
 
 .business {
     height: auto;
-    width: 80px;
+    width: 70px;
 
     margin-bottom: 30px;
     margin-left: 20px;
     margin-right: 20px;
 
-    filter: grayscale(10%);
+    filter: grayscale(100%);
+    opacity: 0.7;
 }
 
 

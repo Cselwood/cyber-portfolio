@@ -3,6 +3,8 @@
     flex-direction: row;
     text-align: center;
     justify-content: space-between;
+    
+    opacity: 0.6;
 }
 
 .inner-container {
@@ -25,6 +27,7 @@
 }
 
 .footer-text {
-    font-size: 14px;
+    font-size: 11px;
+    line-height: 200%;
     font-weight: 500;
 }
