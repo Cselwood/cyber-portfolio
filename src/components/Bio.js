@@ -13,10 +13,10 @@ const Bio = () => {
             <h2 className='alt small-margin-bottom small-padding-bottom'>Who am I?</h2>
 
             <p className='small-margin-bottom'>Over a decade of experience in operations, data, and tech-driven innovation.</p>
-            <p className='small-margin-bottom'>Expert in optimising finance, data and retail systems.</p>
-            <p className='small-margin-bottom'>Driven by a genuine passion for cyber security, focusing on blue-team roles.</p>
+            <p className='small-margin-bottom'>Skilled in applying cybersecurity frameworks, like NIST or PTES, and threat modelling.</p>
+            <p className='small-margin-bottom'>Hands-on expertise in network security, vulnerability management, and application security tools like Burp Suite and Metasploit.</p>
             <p className='small-margin-bottom'>Results-focused, resilient, and growth-oriented.</p>
-            <p className='small-margin-bottom'>More than anything, driven by a genuine passion for cyber security.</p>
+            <p className='small-margin-bottom'>Passionate about building resilient systems and tackling modern security challenges.</p>
             
             <a href='#jobs'>
                 <p className='hover2 small-margin-bottom'>Explore My Work</p>

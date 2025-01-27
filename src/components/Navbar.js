@@ -70,30 +70,30 @@ function Navbar() {
                 <div className="nav-holding-container">
                     <div className="hidden-nav-flex">
                         <a href="#home">
-                            <h4 className="nav-item landing-name">
-                                CS
-                            </h4>
+                            <h3 className="nav-item landing-name medium-margin-top">
+                                <strong>CS</strong>
+                            </h3>
                         </a>
                         <a className="nav-item" href="#about" onClick={toggleNav}>
-                            <p className="hover3 nav-link">
+                            <h2 className="hover3 nav-link">
                                 About
-                            </p>
+                            </h2>
                         </a>
                         <a className="nav-item" href="#jobs" onClick={toggleNav}>
-                            <p className="hover3 nav-link">
+                            <h2 className="hover3 nav-link">
                                 Experience
-                            </p>
+                            </h2>
                         </a>
                         <a className="nav-item" href="#projects" onClick={toggleNav}>
-                            <p className="hover3 nav-link">
+                            <h2 className="hover3 nav-link">
                                 Projects
-                            </p>
+                            </h2>
                         </a>
                         <a className='nav-item nav-link' href='https://www.linkedin.com/in/chris-selwood/' alt='LinkedIn' target='select'>
-                            <Icon className='nav-icon' path={mdiLinkedin} size={2}/>
+                            <h2><Icon className='nav-icon' path={mdiLinkedin} size={2}/></h2>
                         </a>
                         <a className='nav-item nav-link' href='https://github.com/Cselwood' alt='GitHub' target='select'>
-                            <Icon className='nav-icon' path={mdiGithub} size={2} />
+                            <h2><Icon className='nav-icon' path={mdiGithub} size={2} /></h2>
                         </a>
                     </div>
                     <div className="empty-nav" onClick={toggleNav}>

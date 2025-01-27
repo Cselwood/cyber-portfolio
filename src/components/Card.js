@@ -1,6 +1,5 @@
 import React from 'react';
 import CV from "../assets/ChrisSelwoodCV.pdf";
-import Chris from "../assets/chris.png"
 import '../styles/Card.css';
 
 function Card() {   
@@ -9,7 +8,7 @@ function Card() {
         <div className='card-container medium-padding-bottom'>
             <h2 className='alt small-padding-bottom'>Chris Selwood</h2>
             <p className='small-margin-bottom small-margin-top'>
-                I'm an MSc Cyber Security student, decade experienced data analyst, and first-class software engineering graduate.
+                MSc Cyber Security student, experienced data analyst, and first-class software engineering graduate.
             </p>
             <p className='small-margin-bottom'>London, UK</p>
             <div className='button-flex small-margin-bottom small-padding-bottom'>  
