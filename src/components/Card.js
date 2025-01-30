@@ -1,12 +1,18 @@
 import React from 'react';
 import CV from "../assets/ChrisSelwoodCV.pdf";
+import badge from "../assets/isc2-candidate.png";
 import '../styles/Card.css';
+
 
 function Card() {   
 
     return (
         <div className='card-container medium-padding-bottom'>
-            <h2 className='alt small-padding-bottom'>Chris Selwood</h2>
+            <h2 className='alt small-padding-bottom'>Chris Selwood 
+                <a href='https://www.credly.com/badges/bdd5d8d3-0c93-4c1c-961d-15e6c3c4ab77/public_url' target="_blank" rel="noreferrer">
+                    <img className='credly' src={badge} alt="badge"/>
+                </a>
+            </h2>
             <p className='small-margin-bottom small-margin-top'>
                 MSc Cyber Security student, experienced data analyst, and first-class software engineering graduate.
             </p>
