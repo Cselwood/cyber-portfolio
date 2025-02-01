@@ -5,8 +5,6 @@ import {ReactComponent as Stef} from "../assets/Stef.svg";
 import {ReactComponent as Zapi} from "../assets/Zapi.svg";
 import {ReactComponent as Dome} from "../assets/dome.svg";
 import {ReactComponent as NewBrand} from "../assets/newbrand.svg";
-import Icon from '@mdi/react';
-import { mdiBriefcaseOutline } from '@mdi/js';
 import Degree from "../assets/degree_scan.pdf";
 import ccna from "../assets/cisco.svg";
 import uni from "../assets/uni.svg";

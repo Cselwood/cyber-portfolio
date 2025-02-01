@@ -1,16 +1,22 @@
-/* IMPORTS */
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+/* Fonts */
 
 @font-face {
     font-family: "Polysans";
+    font-style: normal;
+    font-weight: normal;
     src: url(../fonts/PolySansGX.woff2), format(woff2);
+}
+
+@font-face {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: normal;
+    src: local("DM Sans"), url("../fonts/DMSans-VariableFont_opsz\,wght.ttf") format("ttf");
 }
 
 /* GLOBALS */
 html, body {
-scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -33,11 +39,13 @@ body {
 
 h1, h2, h3, h4, h5, h6, p, b, strong, span {
     font-family: "DM Sans", sans-serif;
+    
     font-optical-sizing: auto;
     -webkit-font-smoothing: antialiased;
     font-style: normal;
     text-transform: none;
     text-decoration: none;
+    font-weight: 1 1000;
 
     margin: 0;
 
@@ -45,7 +53,7 @@ h1, h2, h3, h4, h5, h6, p, b, strong, span {
 }
 
 .alt {
-    font-family: "Polysans";
+    font-family: "Polysans", "DM Sans";
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
