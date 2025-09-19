@@ -19,7 +19,7 @@ function Card() {
             <p className='small-margin-bottom'>London, UK</p>
             <div className='button-flex small-margin-bottom small-padding-bottom'>  
                 <a className='simple-button--white small-margin-top right-hand-margin' href="https://www.linkedin.com/messaging/compose/?recipient=chris-selwood" alt="linkedin" rel="noreferrer" target='_blank'>
-                    <p>Say hello!</p>
+                    <p>Say hi on LinkedIn!</p>
                 </a>
                 <a className='blue-button small-margin-top' href={CV} alt="resume" rel="noreferrer" target='_blank'>
                     <p>Download CV</p>

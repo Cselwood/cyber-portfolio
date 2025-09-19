@@ -20,26 +20,8 @@ function MainPage() {
         <Navbar/>
       </div>
 
-      <div className='global-section medium-padding-top'>
+      <div className='global-section large-padding-top'>
         <Card/>
-      </div>
-
-      <div id="about" className='global-section medium-padding-top medium-padding-bottom'>
-        <Bio/>
-        <Bio2/>
-        <Skills/>
-      </div>
-
-      <div id="jobs" className='global-section medium-padding-bottom'>
-        <Jobs/>
-      </div>
-
-      <div id="projects" className='global-section medium-padding-top medium-padding-bottom'>
-        <Projects/>
-      </div>
-
-      <div className='global-section small-padding-top small-padding-bottom'>
-        <Footer/>
       </div>
 
     </div>

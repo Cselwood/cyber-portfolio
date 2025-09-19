@@ -39,21 +39,10 @@ function Navbar() {
                         CS
                     </h4>
                 </a>
-                <a className="nav-item" href="#about">
-                    <p className="alt hover3">
-                        About
-                    </p>
-                </a>
-                <a className="nav-item" href="#jobs">
-                    <p className="alt hover3">
-                        Experience
-                    </p>
-                </a>
-                <a className="nav-item" href="#projects">
-                    <p className="alt hover3">
-                        Projects
-                    </p>
-                </a>
+                <p className="nav-item alt hover3">
+                        Website Coming Soon
+                </p>
+
                 <a className='nav-item' href='https://www.linkedin.com/in/chris-selwood/' alt='LinkedIn' target='select'>
                     <Icon className='nav-icon' path={mdiLinkedin} size={1.1}/>
                 </a>
@@ -74,21 +63,10 @@ function Navbar() {
                                 <strong>CS</strong>
                             </h3>
                         </a>
-                        <a className="nav-item" href="#about" onClick={toggleNav}>
-                            <h2 className="hover3 nav-link">
-                                About
-                            </h2>
-                        </a>
-                        <a className="nav-item" href="#jobs" onClick={toggleNav}>
-                            <h2 className="hover3 nav-link">
-                                Experience
-                            </h2>
-                        </a>
-                        <a className="nav-item" href="#projects" onClick={toggleNav}>
-                            <h2 className="hover3 nav-link">
-                                Projects
-                            </h2>
-                        </a>
+                        <h2 className="hover3 nav-link">
+                                Website Coming Soon
+                        </h2>
+
                         <a className='nav-item nav-link' href='https://www.linkedin.com/in/chris-selwood/' alt='LinkedIn' target='select'>
                             <h2><Icon className='nav-icon' path={mdiLinkedin} size={2}/></h2>
                         </a>
