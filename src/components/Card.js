@@ -14,7 +14,7 @@ function Card() {
                 </a>
             </h2>
             <p className='small-margin-bottom small-margin-top'>
-                MSc Cyber Security student, experienced data analyst, and first-class software engineering graduate.
+                MSc Cyber Security graduate with Distinction, experienced data analyst, and software engineering.
             </p>
             <p className='small-margin-bottom'>London, UK</p>
             <div className='button-flex small-margin-bottom small-padding-bottom'>  
