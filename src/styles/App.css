@@ -14,6 +14,17 @@
     src: local("DM Sans"), url("../fonts/DMSans-VariableFont_opsz\,wght.ttf") format("ttf");
 }
 
+@font-face {
+    font-family: 'Source Serif 4';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Serif 4'), url('https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap') format('woff2');
+}
+
+.sourceserif {
+    font-family: "Source Serif 4";
+}
+
 /* GLOBALS */
 html, body {
     scroll-behavior: smooth;
@@ -72,11 +83,10 @@ h2 {
 }
 
 h3 {
-    font-size: 25px;
-    line-height: normal;
-    font-weight: 600;
-    
-    word-spacing: 2px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
 }
 
 h4 {

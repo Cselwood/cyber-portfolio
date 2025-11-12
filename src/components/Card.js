@@ -9,14 +9,11 @@ function Card() {
     return (
         <div className='card-container medium-padding-bottom'>
             <h2 className='alt small-padding-bottom'>Chris Selwood 
-                <a href='https://www.credly.com/badges/bdd5d8d3-0c93-4c1c-961d-15e6c3c4ab77/public_url' target="_blank" rel="noreferrer">
-                    <img className='credly' src={badge} alt="badge"/>
-                </a>
+            
             </h2>
-            <p className='small-margin-bottom small-margin-top'>
-                MSc Cyber Security graduate with Distinction, experienced data analyst, and software engineering.
-            </p>
-            <p className='small-margin-bottom'>London, UK</p>
+            <h3 className='small-margin-bottom small-margin-top'>
+                MSc Cyber Security graduate (Distinction) and ISC2 Certified in Cybersecurity (CC) with experience in data analysis, software engineering, and operations across retail and technology. Skilled in AI-driven security tools, ISO/NIST-aligned systems, and threat mitigation. Known for quickly simplifying complex problems and turning technical insight into measurable results.
+            </h3>
             <div className='button-flex small-margin-bottom small-padding-bottom'>  
                 <a className='simple-button--white small-margin-top right-hand-margin' href="https://www.linkedin.com/messaging/compose/?recipient=chris-selwood" alt="linkedin" rel="noreferrer" target='_blank'>
                     <p>Say hi on LinkedIn!</p>
