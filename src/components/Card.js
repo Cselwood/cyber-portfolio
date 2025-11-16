@@ -11,15 +11,15 @@ function Card() {
             <h2 className='alt small-padding-bottom'>Chris Selwood 
             
             </h2>
-            <h3 className='small-margin-bottom small-margin-top'>
-                MSc Cyber Security graduate (Distinction) and ISC2 Certified in Cybersecurity (CC) with experience in data analysis, software engineering, and operations across retail and technology. Skilled in AI-driven security tools, ISO/NIST-aligned systems, and threat mitigation. Known for quickly simplifying complex problems and turning technical insight into measurable results.
-            </h3>
+            <h4 className='alt small-margin-bottom small-margin-top'>
+                A Distinction MSc Cyber Security graduate (2025) and ISC2 Certified in Cybersecurity (CC) professional, seeking graduate roles in cyber security. <br/><br/>Focused on AI-driven threat intelligence, network security, ISO-compliant ISMS design, red team operations, vulnerability assessments, and applied cryptography. Currently studying towards Security+ (CompTIA). Known for adapting quickly, simplifying complex problems, and turning technical insight into measurable success.
+            </h4>
             <div className='button-flex small-margin-bottom small-padding-bottom'>  
-                <a className='simple-button--white small-margin-top right-hand-margin' href="https://www.linkedin.com/messaging/compose/?recipient=chris-selwood" alt="linkedin" rel="noreferrer" target='_blank'>
-                    <p>Say hi on LinkedIn!</p>
+                <a className='blue-button small-margin-top right-hand-margin' href="https://www.linkedin.com/messaging/compose/?recipient=chris-selwood" alt="linkedin" rel="noreferrer" target='_blank'>
+                    <p className='alt'>Talk to me</p>
                 </a>
-                <a className='blue-button small-margin-top' href={CV} alt="resume" rel="noreferrer" target='_blank'>
-                    <p>Download CV</p>
+                <a className='simple-button--white small-margin-top' href={CV} alt="resume" rel="noreferrer" target='_blank'>
+                    <p className='alt'>Download CV</p>
                 </a>
             </div>
             
